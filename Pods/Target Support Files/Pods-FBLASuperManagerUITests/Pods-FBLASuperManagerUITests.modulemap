@@ -1,0 +1,6 @@
+framework module Pods_FBLASuperManagerUITests {
+  umbrella header "Pods-FBLASuperManagerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
