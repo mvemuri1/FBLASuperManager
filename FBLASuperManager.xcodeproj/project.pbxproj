@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A95535F400B6E69DDC586E5 /* Pods_FBLASuperManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46138E2EA2D53ED7219570F /* Pods_FBLASuperManagerTests.framework */; };
 		4AA8D57F23E8F3B00095CA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D57E23E8F3B00095CA6B /* AppDelegate.swift */; };
 		4AA8D58123E8F3B00095CA6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D58023E8F3B00095CA6B /* SceneDelegate.swift */; };
 		4AA8D58323E8F3B00095CA6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D58223E8F3B00095CA6B /* ViewController.swift */; };
@@ -15,6 +16,9 @@
 		4AA8D58B23E8F3B20095CA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8D58923E8F3B20095CA6B /* LaunchScreen.storyboard */; };
 		4AA8D59623E8F3B20095CA6B /* FBLASuperManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D59523E8F3B20095CA6B /* FBLASuperManagerTests.swift */; };
 		4AA8D5A123E8F3B20095CA6B /* FBLASuperManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D5A023E8F3B20095CA6B /* FBLASuperManagerUITests.swift */; };
+		4AA8D5AF23E8F4A70095CA6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */; };
+		8B109B0B3D32A1AA248EDBA8 /* Pods_FBLASuperManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662930CA5CD69F3DF45DCBDB /* Pods_FBLASuperManager.framework */; };
+		B69941FBE53511D399120B37 /* Pods_FBLASuperManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6798731BE248F6BDE78125C0 /* Pods_FBLASuperManagerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14489ABEEA36C6968749C80A /* Pods-FBLASuperManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLASuperManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-FBLASuperManagerTests/Pods-FBLASuperManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A05228516DF951A62574597 /* Pods-FBLASuperManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLASuperManagerTests.release.xcconfig"; path = "Target Support Files/Pods-FBLASuperManagerTests/Pods-FBLASuperManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		4AA8D57B23E8F3B00095CA6B /* FBLASuperManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBLASuperManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA8D57E23E8F3B00095CA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AA8D58023E8F3B00095CA6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		4AA8D59C23E8F3B20095CA6B /* FBLASuperManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBLASuperManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA8D5A023E8F3B20095CA6B /* FBLASuperManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLASuperManagerUITests.swift; sourceTree = "<group>"; };
 		4AA8D5A223E8F3B30095CA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		662930CA5CD69F3DF45DCBDB /* Pods_FBLASuperManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6798731BE248F6BDE78125C0 /* Pods_FBLASuperManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DC0DF32AB7E75B6C8FD413E /* Pods-FBLASuperManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLASuperManager.debug.xcconfig"; path = "Target Support Files/Pods-FBLASuperManager/Pods-FBLASuperManager.debug.xcconfig"; sourceTree = "<group>"; };
+		92AD059C1D69E499EC6931D7 /* Pods-FBLASuperManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLASuperManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-FBLASuperManagerUITests/Pods-FBLASuperManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C46138E2EA2D53ED7219570F /* Pods_FBLASuperManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECFCDCE92036181D1B36EF37 /* Pods-FBLASuperManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLASuperManager.release.xcconfig"; path = "Target Support Files/Pods-FBLASuperManager/Pods-FBLASuperManager.release.xcconfig"; sourceTree = "<group>"; };
+		FB3B9EABD0300A2832DF5FF4 /* Pods-FBLASuperManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLASuperManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-FBLASuperManagerUITests/Pods-FBLASuperManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B109B0B3D32A1AA248EDBA8 /* Pods_FBLASuperManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A95535F400B6E69DDC586E5 /* Pods_FBLASuperManagerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69941FBE53511D399120B37 /* Pods_FBLASuperManagerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,8 @@
 				4AA8D59423E8F3B20095CA6B /* FBLASuperManagerTests */,
 				4AA8D59F23E8F3B20095CA6B /* FBLASuperManagerUITests */,
 				4AA8D57C23E8F3B00095CA6B /* Products */,
+				F5C318C8AFB7193F18204C29 /* Pods */,
+				EB8CA5C21DCC96501F0C65B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +125,7 @@
 				4AA8D58723E8F3B20095CA6B /* Assets.xcassets */,
 				4AA8D58923E8F3B20095CA6B /* LaunchScreen.storyboard */,
 				4AA8D58C23E8F3B20095CA6B /* Info.plist */,
+				4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */,
 			);
 			path = FBLASuperManager;
 			sourceTree = "<group>";
@@ -128,6 +148,29 @@
 			path = FBLASuperManagerUITests;
 			sourceTree = "<group>";
 		};
+		EB8CA5C21DCC96501F0C65B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				662930CA5CD69F3DF45DCBDB /* Pods_FBLASuperManager.framework */,
+				C46138E2EA2D53ED7219570F /* Pods_FBLASuperManagerTests.framework */,
+				6798731BE248F6BDE78125C0 /* Pods_FBLASuperManagerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5C318C8AFB7193F18204C29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DC0DF32AB7E75B6C8FD413E /* Pods-FBLASuperManager.debug.xcconfig */,
+				ECFCDCE92036181D1B36EF37 /* Pods-FBLASuperManager.release.xcconfig */,
+				14489ABEEA36C6968749C80A /* Pods-FBLASuperManagerTests.debug.xcconfig */,
+				1A05228516DF951A62574597 /* Pods-FBLASuperManagerTests.release.xcconfig */,
+				92AD059C1D69E499EC6931D7 /* Pods-FBLASuperManagerUITests.debug.xcconfig */,
+				FB3B9EABD0300A2832DF5FF4 /* Pods-FBLASuperManagerUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AA8D5A523E8F3B30095CA6B /* Build configuration list for PBXNativeTarget "FBLASuperManager" */;
 			buildPhases = (
+				B0CF3E32AD47E5B21A37AD09 /* [CP] Check Pods Manifest.lock */,
 				4AA8D57723E8F3B00095CA6B /* Sources */,
 				4AA8D57823E8F3B00095CA6B /* Frameworks */,
 				4AA8D57923E8F3B00095CA6B /* Resources */,
+				EEAA97BD3A79AFA02D67D18F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AA8D5A823E8F3B30095CA6B /* Build configuration list for PBXNativeTarget "FBLASuperManagerTests" */;
 			buildPhases = (
+				531187A6DB4F823668DAD110 /* [CP] Check Pods Manifest.lock */,
 				4AA8D58D23E8F3B20095CA6B /* Sources */,
 				4AA8D58E23E8F3B20095CA6B /* Frameworks */,
 				4AA8D58F23E8F3B20095CA6B /* Resources */,
@@ -170,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AA8D5AB23E8F3B30095CA6B /* Build configuration list for PBXNativeTarget "FBLASuperManagerUITests" */;
 			buildPhases = (
+				EA272E6A0C2A0ACC94B159A8 /* [CP] Check Pods Manifest.lock */,
 				4AA8D59823E8F3B20095CA6B /* Sources */,
 				4AA8D59923E8F3B20095CA6B /* Frameworks */,
 				4AA8D59A23E8F3B20095CA6B /* Resources */,
@@ -233,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA8D58B23E8F3B20095CA6B /* LaunchScreen.storyboard in Resources */,
+				4AA8D5AF23E8F4A70095CA6B /* GoogleService-Info.plist in Resources */,
 				4AA8D58823E8F3B20095CA6B /* Assets.xcassets in Resources */,
 				4AA8D58623E8F3B00095CA6B /* Main.storyboard in Resources */,
 			);
@@ -253,6 +301,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		531187A6DB4F823668DAD110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FBLASuperManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0CF3E32AD47E5B21A37AD09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FBLASuperManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA272E6A0C2A0ACC94B159A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FBLASuperManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEAA97BD3A79AFA02D67D18F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FBLASuperManager/Pods-FBLASuperManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FBLASuperManager/Pods-FBLASuperManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FBLASuperManager/Pods-FBLASuperManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4AA8D57723E8F3B00095CA6B /* Sources */ = {
@@ -432,6 +566,7 @@
 		};
 		4AA8D5A623E8F3B30095CA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC0DF32AB7E75B6C8FD413E /* Pods-FBLASuperManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +584,7 @@
 		};
 		4AA8D5A723E8F3B30095CA6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECFCDCE92036181D1B36EF37 /* Pods-FBLASuperManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +602,7 @@
 		};
 		4AA8D5A923E8F3B30095CA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14489ABEEA36C6968749C80A /* Pods-FBLASuperManagerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +624,7 @@
 		};
 		4AA8D5AA23E8F3B30095CA6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A05228516DF951A62574597 /* Pods-FBLASuperManagerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +646,7 @@
 		};
 		4AA8D5AC23E8F3B30095CA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92AD059C1D69E499EC6931D7 /* Pods-FBLASuperManagerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +666,7 @@
 		};
 		4AA8D5AD23E8F3B30095CA6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB3B9EABD0300A2832DF5FF4 /* Pods-FBLASuperManagerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
