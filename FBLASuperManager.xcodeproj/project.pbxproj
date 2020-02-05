@@ -18,6 +18,7 @@
 		4AA8D59623E8F3B20095CA6B /* FBLASuperManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D59523E8F3B20095CA6B /* FBLASuperManagerTests.swift */; };
 		4AA8D5A123E8F3B20095CA6B /* FBLASuperManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D5A023E8F3B20095CA6B /* FBLASuperManagerUITests.swift */; };
 		4AA8D5AF23E8F4A70095CA6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */; };
+		4ABDA79923EA74FA0048AC6B /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABDA79823EA74FA0048AC6B /* Welcome.swift */; };
 		8B109B0B3D32A1AA248EDBA8 /* Pods_FBLASuperManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662930CA5CD69F3DF45DCBDB /* Pods_FBLASuperManager.framework */; };
 		B69941FBE53511D399120B37 /* Pods_FBLASuperManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6798731BE248F6BDE78125C0 /* Pods_FBLASuperManagerUITests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		4AA8D5A023E8F3B20095CA6B /* FBLASuperManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLASuperManagerUITests.swift; sourceTree = "<group>"; };
 		4AA8D5A223E8F3B30095CA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4ABDA79823EA74FA0048AC6B /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		662930CA5CD69F3DF45DCBDB /* Pods_FBLASuperManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6798731BE248F6BDE78125C0 /* Pods_FBLASuperManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC0DF32AB7E75B6C8FD413E /* Pods-FBLASuperManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLASuperManager.debug.xcconfig"; path = "Target Support Files/Pods-FBLASuperManager/Pods-FBLASuperManager.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				4AA8D58723E8F3B20095CA6B /* Assets.xcassets */,
 				4A3D192323EA5A7400C1B18A /* SignInView.swift */,
 				4AA8D58923E8F3B20095CA6B /* LaunchScreen.storyboard */,
+				4ABDA79823EA74FA0048AC6B /* Welcome.swift */,
 				4AA8D58C23E8F3B20095CA6B /* Info.plist */,
 				4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */,
 			);
@@ -415,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA8D58323E8F3B00095CA6B /* ViewController.swift in Sources */,
+				4ABDA79923EA74FA0048AC6B /* Welcome.swift in Sources */,
 				4AA8D57F23E8F3B00095CA6B /* AppDelegate.swift in Sources */,
 				4A3D192423EA5A7400C1B18A /* SignInView.swift in Sources */,
 				4AA8D58123E8F3B00095CA6B /* SceneDelegate.swift in Sources */,

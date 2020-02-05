@@ -40,7 +40,7 @@ class SignInView: UIViewController {
         func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
           // ...
           if let error = error {
-            // ...
+            print(error.localizedDescription)
             return
           }
             // checks to see if user is in our database
@@ -51,14 +51,17 @@ class SignInView: UIViewController {
             
             Auth.auth().signIn(with: credential) { (authResult, error) in
               if let error = error {
-                // ...
-                return
+                print(error.localizedDescription)
+                } else {
+                print("Login Successful.")
               }
               // User is signed in
               // ...
             }
+            
         }
         
+    
         
     
 
