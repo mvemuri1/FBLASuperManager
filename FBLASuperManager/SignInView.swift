@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-// Imports Authentication & Database management for Firebase
 import FirebaseAuth
 import FirebaseDatabase
 import GoogleSignIn
@@ -17,12 +16,20 @@ import GoogleSignIn
 
 class SignInView: UIViewController, GIDSignInDelegate {
     //basic function to load view
- 
+ let userDefault = UserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // shows Google Sign In button
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance().signIn()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if userDefault.bool(forKey: "usersignedin") {
+            performSegue(withIdentifier: "Segue_To_Signin", sender: self)
+        }
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()    }

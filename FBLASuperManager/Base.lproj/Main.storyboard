@@ -450,36 +450,37 @@
         <!--Home-->
         <scene sceneID="XHW-KU-p75">
             <objects>
-                <viewController id="SQI-9j-eZv" sceneMemberID="viewController">
+                <viewController id="SQI-9j-eZv" customClass="Welcome" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2We-Qf-hpr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N9L-Z1-bqf">
-                                <rect key="frame" x="90" y="40" width="234" height="101"/>
+                                <rect key="frame" x="106.33333333333333" y="40" width="201.33333333333337" height="58"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="dCv-Zh-vs8">
-                                        <rect key="frame" x="0.0" y="0.0" width="234" height="58"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="201.33333333333334" height="58"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/school name/" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="R4G-7F-Qgm">
-                                        <rect key="frame" x="0.0" y="58" width="234" height="43"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="37"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOo-8o-HoQ">
-                                <rect key="frame" x="5" y="161" width="404" height="501"/>
+                            <wkWebView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOo-8o-HoQ">
+                                <rect key="frame" x="5" y="169" width="404" height="493"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF0-2f-qqK">
+                                <rect key="frame" x="186" y="118" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -493,10 +494,13 @@
                         <viewLayoutGuide key="safeArea" id="6xL-WU-QZN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="DxZ-ZA-Ihw"/>
+                    <connections>
+                        <outlet property="emailOu" destination="IF0-2f-qqK" id="RbH-DE-IeW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5I-LS-4Ga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3712" y="-2495"/>
+            <point key="canvasLocation" x="3711.594202898551" y="-2495.380434782609"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BC3-SD-6s0">
