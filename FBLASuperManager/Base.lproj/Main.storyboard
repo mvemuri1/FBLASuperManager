@@ -285,7 +285,23 @@
                     <view key="view" contentMode="scaleToFill" id="QtC-Mp-6cr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Kt-Dy-LgI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="25C-Ff-6BH" firstAttribute="bottom" secondItem="1Kt-Dy-LgI" secondAttribute="bottom" id="15W-sD-U8k"/>
+                            <constraint firstItem="25C-Ff-6BH" firstAttribute="trailing" secondItem="1Kt-Dy-LgI" secondAttribute="trailing" id="9lx-Bo-DLf"/>
+                            <constraint firstItem="1Kt-Dy-LgI" firstAttribute="leading" secondItem="25C-Ff-6BH" secondAttribute="leading" id="LXm-wA-NFC"/>
+                            <constraint firstItem="1Kt-Dy-LgI" firstAttribute="top" secondItem="25C-Ff-6BH" secondAttribute="top" id="T7R-ZS-CHf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="25C-Ff-6BH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Events" image="rosette" catalog="system" id="hS2-ou-pBf"/>
@@ -301,7 +317,43 @@
                     <view key="view" contentMode="scaleToFill" id="2We-Qf-hpr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N9L-Z1-bqf">
+                                <rect key="frame" x="90" y="40" width="234" height="101"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="dCv-Zh-vs8">
+                                        <rect key="frame" x="0.0" y="0.0" width="234" height="58"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/school name/" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="R4G-7F-Qgm">
+                                        <rect key="frame" x="0.0" y="58" width="234" height="43"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="37"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOo-8o-HoQ">
+                                <rect key="frame" x="5" y="161" width="404" height="501"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6xL-WU-QZN" firstAttribute="trailing" secondItem="dOo-8o-HoQ" secondAttribute="trailing" constant="5" id="1hY-aW-gg5"/>
+                            <constraint firstItem="N9L-Z1-bqf" firstAttribute="centerY" secondItem="2We-Qf-hpr" secondAttribute="centerY" id="2Dl-kD-9zd"/>
+                            <constraint firstItem="dOo-8o-HoQ" firstAttribute="top" secondItem="N9L-Z1-bqf" secondAttribute="bottom" constant="20" id="Asf-XT-mB1"/>
+                            <constraint firstItem="dOo-8o-HoQ" firstAttribute="leading" secondItem="6xL-WU-QZN" secondAttribute="leading" constant="5" id="B0S-CO-hec"/>
+                            <constraint firstItem="N9L-Z1-bqf" firstAttribute="top" secondItem="6xL-WU-QZN" secondAttribute="top" constant="40" id="XmO-HB-wji"/>
+                            <constraint firstItem="N9L-Z1-bqf" firstAttribute="centerX" secondItem="2We-Qf-hpr" secondAttribute="centerX" id="gM4-GQ-6xT"/>
+                            <constraint firstItem="6xL-WU-QZN" firstAttribute="bottom" secondItem="dOo-8o-HoQ" secondAttribute="bottom" constant="5" id="usH-sd-QYL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6xL-WU-QZN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="DxZ-ZA-Ihw"/>
@@ -330,7 +382,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDl-16-vat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2820" y="-1060"/>
+            <point key="canvasLocation" x="2971" y="-1060"/>
         </scene>
         <!--Sign In View-->
         <scene sceneID="Rrz-uW-Fff">
@@ -457,7 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGQ-np-Upe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1803" y="-148"/>
+            <point key="canvasLocation" x="1729" y="-141"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8eC-Xh-MJn">
@@ -545,7 +597,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94y-d5-fww" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2594.202898550725" y="-67.663043478260875"/>
+            <point key="canvasLocation" x="2512" y="-141"/>
         </scene>
     </scenes>
     <resources>
@@ -557,6 +609,6 @@
         <image name="rosette" catalog="system" width="50" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6vN-yA-t0I"/>
+        <segue reference="u99-Rq-vpc"/>
     </inferredMetricsTieBreakers>
 </document>
