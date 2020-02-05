@@ -15,7 +15,7 @@ import GoogleSignIn
 // import PopupDialog
 
 
-class SignInView: UIViewController {
+class SignInView: UIViewController, GIDSignInDelegate {
     //basic function to load view
  
     override func viewDidLoad() {

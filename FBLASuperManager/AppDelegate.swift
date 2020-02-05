@@ -16,7 +16,7 @@ import FirebaseAuth
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate{
 
 
-
+let userDefault = UserDefaults()
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -30,16 +30,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate{
 
     // the following methods are used to deal with the Google Sign In on the sign in page, found online at the Google Sign In Authentication manual on firebase
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
-      // ...
       if let error = error {
-        // ...
+        print(error.localizedDescription)
         return
-      }
-
+      } else {
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                         accessToken: authentication.accessToken)
-      // ...
+        Auth.auth().signInAndRetrieveData(with: credential) { (result, error) in
+            if error == nil {
+                self.userDefault.set(true, forKey: "usersignedin")
+                self.userDefault.synchronize()
+           //     self.window?.rootViewController?.performSegue(withIdentifier: "Segue_to_Signup", sender: nil )
+            } else {
+                print(error?.localizedDescription)
+            }
+            }
+        }
         }
 
         func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
@@ -54,6 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate{
         return GIDSignIn.sharedInstance().handle(url)
         }
     
+    // for iOS 8 and older
         func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         return GIDSignIn.sharedInstance().handle(url)
         }

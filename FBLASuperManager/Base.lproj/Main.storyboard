@@ -621,11 +621,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="veg-tl-63z" customClass="GIDSignInButton">
-                                <rect key="frame" x="87" y="308" width="240" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcI-pv-mN5">
                                 <rect key="frame" x="99" y="479" width="217" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -638,6 +633,11 @@
                                     <segue destination="Ttw-Qs-ddI" kind="presentation" id="Z9B-nM-1eg"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="veg-tl-63z" customClass="GIDSignInButton">
+                                <rect key="frame" x="87" y="275" width="240" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="QXh-Ar-wxF"/>
@@ -645,7 +645,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGQ-np-Upe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1729" y="-141"/>
+            <point key="canvasLocation" x="1728.985507246377" y="-141.03260869565219"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8eC-Xh-MJn">
@@ -745,6 +745,6 @@
         <image name="rosette" catalog="system" width="50" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6vN-yA-t0I"/>
+        <segue reference="u99-Rq-vpc"/>
     </inferredMetricsTieBreakers>
 </document>
