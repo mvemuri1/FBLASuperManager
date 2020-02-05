@@ -137,14 +137,101 @@
                     <view key="view" contentMode="scaleToFill" id="ESZ-aq-2hm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="TdN-NR-DGI">
+                                <rect key="frame" x="47" y="123.66666666666666" width="320" height="468.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Meeting" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="Gpo-D2-JbP">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="32.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="lTr-eY-H0K">
+                                        <rect key="frame" x="0.0" y="58" width="320" height="216"/>
+                                    </datePicker>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Member Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nB5-fW-kMe">
+                                        <rect key="frame" x="0.0" y="300.66666666666663" width="320" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuM-fk-ht2">
+                                        <rect key="frame" x="0.0" y="360.66666666666663" width="320" height="46"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="29"/>
+                                        <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Mark Present">
+                                            <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHi-Se-Qsv">
+                                        <rect key="frame" x="0.0" y="432.66666666666669" width="320" height="36"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="View Meeting Attendance">
+                                            <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="5S7-oe-qxC" kind="presentation" id="nXj-mO-4aG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="TdN-NR-DGI" firstAttribute="centerY" secondItem="ESZ-aq-2hm" secondAttribute="centerY" id="1Tr-qF-pKY"/>
+                            <constraint firstItem="TdN-NR-DGI" firstAttribute="centerX" secondItem="ESZ-aq-2hm" secondAttribute="centerX" id="D2W-ZA-zkR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Cxb-WS-hU3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Attendance" image="checkmark.circle" catalog="system" id="okC-a4-uER"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t8w-V0-QJK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3712" y="-1621"/>
+            <point key="canvasLocation" x="3711.594202898551" y="-1621.467391304348"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="llS-21-5bm">
+            <objects>
+                <viewController id="5S7-oe-qxC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="07a-Nv-MBY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b1w-wi-5Sf">
+                                <rect key="frame" x="47" y="258" width="320" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Choose Date of Meeting" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="ncs-3T-zzA">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="32.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tj3-J5-fJW">
+                                        <rect key="frame" x="0.0" y="32.666666666666686" width="320" height="167.33333333333334"/>
+                                    </pickerView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Displays names of Attendees here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ub0-n2-rWD">
+                                        <rect key="frame" x="0.0" y="200" width="320" height="0.0"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45882352939999999" green="0.62745098040000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="b1w-wi-5Sf" firstAttribute="top" secondItem="7It-ZJ-BYn" secondAttribute="top" constant="258" id="VIm-jr-HIw"/>
+                            <constraint firstItem="b1w-wi-5Sf" firstAttribute="centerY" secondItem="07a-Nv-MBY" secondAttribute="centerY" id="fvG-p1-uNy"/>
+                            <constraint firstItem="b1w-wi-5Sf" firstAttribute="centerX" secondItem="07a-Nv-MBY" secondAttribute="centerX" id="o6B-98-ghb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7It-ZJ-BYn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xVg-wG-JcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4859" y="-1618"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="rlr-In-GdX">
