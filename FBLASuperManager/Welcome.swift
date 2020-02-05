@@ -16,13 +16,19 @@ import GoogleSignIn
 
 class Welcome: UIViewController {
     //basic function to load view
- 
-    let user = Auth.auth().currentUser
     
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
+        let user = Auth.auth().currentUser
+        if user?.uid == nil {
+        //Show Login Screen
+        } else {
+        //Show content
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()    }
+    
+    
 }
