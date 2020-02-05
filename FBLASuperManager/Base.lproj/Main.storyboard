@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="113.31521739130436"/>
+            <point key="canvasLocation" x="99" y="102"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gcF-Da-EVJ">
@@ -255,38 +255,26 @@
             </objects>
             <point key="canvasLocation" x="2489.8550724637685" y="-650.54347826086962"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View-->
         <scene sceneID="Rrz-uW-Fff">
             <objects>
-                <viewController id="Hby-Ma-HJc" sceneMemberID="viewController">
+                <viewController id="Hby-Ma-HJc" customClass="SignInView" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P4P-A1-z6L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter username..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vmh-PO-w7S">
-                                <rect key="frame" x="121" y="194" width="157" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please sign in through a Google account to continue into FBLA Super Manager. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-AR-yab">
+                                <rect key="frame" x="45" y="74" width="325" height="242"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="859-Iq-jnf">
-                                <rect key="frame" x="121" y="244" width="157" height="34"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G00-Oj-vVv" customClass="GIDSignInButton">
+                                <rect key="frame" x="87" y="308" width="240" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFD-vk-TLc">
-                                <rect key="frame" x="99" y="589" width="217" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
-                                <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Enter">
-                                    <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <segue destination="o7G-CG-h8O" kind="custom" id="PcY-3p-1uH"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="wxi-6h-uH5"/>
@@ -294,10 +282,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMG-ix-990" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1729" y="-1059"/>
+            <point key="canvasLocation" x="1728.985507246377" y="-1059.7826086956522"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0Cv-jo-HoC">
+            <objects>
+                <viewController id="BcL-cB-eCa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LJW-dI-Wd6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lxt-gg-CfS">
+                                <rect key="frame" x="0.0" y="687" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="EMG-Wf-3vP"/>
+                                    <tabBarItem systemItem="more" id="pKd-Or-tzB"/>
+                                </items>
+                            </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuA-Fh-y9L">
+                                <rect key="frame" x="99" y="196" width="217" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
+                                <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Sign-In">
+                                    <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uh-Jg-PeO">
+                                <rect key="frame" x="99" y="309" width="217" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
+                                <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="eBf-XG-FDq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJr-u7-Byv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="-352"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Xmv-kQ-aiL"/>
-    </inferredMetricsTieBreakers>
 </document>

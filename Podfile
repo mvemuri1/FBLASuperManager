@@ -9,6 +9,9 @@ target 'FBLASuperManager' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Database'
+pod 'Firebase/Auth'
+pod 'GoogleSignIn'
+
   target 'FBLASuperManagerTests' do
     inherit! :search_paths
     # Pods for testing
