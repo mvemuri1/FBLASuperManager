@@ -20,6 +20,7 @@ class Welcome: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let user = Auth.auth().currentUser
         if user?.uid == nil {
         //Show Login Screen
