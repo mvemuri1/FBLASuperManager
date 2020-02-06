@@ -4,6 +4,10 @@
    <FileRef
       location = "group:FBLASuperManager.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:FBLASuperManagerTests/.."
+      name = "Controller Screens">
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>

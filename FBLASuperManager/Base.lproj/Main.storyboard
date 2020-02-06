@@ -450,7 +450,7 @@
         <!--Home-->
         <scene sceneID="XHW-KU-p75">
             <objects>
-                <viewController id="SQI-9j-eZv" customClass="Welcome" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="SQI-9j-eZv" customClass="Welcome" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2We-Qf-hpr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -651,16 +651,16 @@
             </objects>
             <point key="canvasLocation" x="1728.985507246377" y="-141.03260869565219"/>
         </scene>
-        <!--View Controller-->
+        <!--Registration Info-->
         <scene sceneID="8eC-Xh-MJn">
             <objects>
-                <viewController id="Ttw-Qs-ddI" sceneMemberID="viewController">
+                <viewController id="Ttw-Qs-ddI" customClass="RegistrationInfo" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7h7-U2-YIO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sq5-aF-rPb">
-                                <rect key="frame" x="60.333333333333343" y="40" width="293.66666666666663" height="636"/>
+                                <rect key="frame" x="60.333333333333343" y="20" width="293.66666666666663" height="676.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please provide the following  links " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="Shi-6S-Szi">
                                         <rect key="frame" x="0.0" y="0.0" width="293.66666666666669" height="65"/>
@@ -713,15 +713,21 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8s2-Wd-SIy">
+                                        <rect key="frame" x="0.0" y="571" width="293.66666666666669" height="20.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qK3-Jk-Gna">
-                                        <rect key="frame" x="0.0" y="571" width="293.66666666666669" height="65"/>
+                                        <rect key="frame" x="0.0" y="611.33333333333337" width="293.66666666666669" height="65"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                         <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Done">
                                             <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <segue destination="wSU-9A-O4C" kind="presentation" id="6vN-yA-t0I"/>
+                                            <action selector="doneTapped:" destination="Ttw-Qs-ddI" eventType="touchUpInside" id="w6E-h6-hNK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -734,6 +740,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tlE-4y-bIq"/>
                     </view>
+                    <connections>
+                        <outlet property="chapterCalTextField" destination="wva-cE-eDd" id="XmU-8R-7Cm"/>
+                        <outlet property="chapterWebTextField" destination="IiU-PA-wIy" id="aRW-Al-ngf"/>
+                        <outlet property="errorLabel" destination="8s2-Wd-SIy" id="rZg-11-CYR"/>
+                        <outlet property="eventsFormTextField" destination="bGt-xX-M4R" id="jmy-sE-c5Z"/>
+                        <outlet property="eventsSheetTextField" destination="dXJ-Nf-YVP" id="4Yh-FY-01q"/>
+                        <outlet property="facebookTextField" destination="ELv-OI-cyO" id="SXz-0P-pUw"/>
+                        <outlet property="instagramTextField" destination="AbN-mN-i6a" id="vq5-lM-9UK"/>
+                        <outlet property="joinFormTextField" destination="ahv-Oe-aPo" id="eeG-Cg-aFz"/>
+                        <outlet property="schoolNameTextField" destination="WTI-Tb-blH" id="4V7-w8-T1Y"/>
+                        <outlet property="twitterTextField" destination="mOQ-PJ-HhD" id="qde-u6-hoh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94y-d5-fww" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -748,7 +766,4 @@
         <image name="questionmark" catalog="system" width="48" height="64"/>
         <image name="rosette" catalog="system" width="50" height="64"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="u99-Rq-vpc"/>
-    </inferredMetricsTieBreakers>
 </document>
