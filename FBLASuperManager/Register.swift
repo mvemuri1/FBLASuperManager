@@ -5,11 +5,8 @@
 //  Created by Megha Vemuri on 2/6/20.
 //  Copyright © 2020 Megha Vemuri. All rights reserved.
 //
-
-import Foundation
 import UIKit
 import FirebaseAuth
-import FirebaseDatabase
 import FirebaseFirestore
 import Firebase
 
@@ -23,11 +20,11 @@ class Register: UIViewController {
     @IBOutlet weak var password: UITextField!
     
     @IBOutlet weak var schoolName: UITextField!
-    
+
     @IBOutlet weak var chapterWebsite: UITextField!
     
     @IBOutlet weak var chapterCalendar: UITextField!
-    
+
     @IBOutlet weak var instagramLink: UITextField!
     
     @IBOutlet weak var twitterLink: UITextField!
@@ -41,39 +38,42 @@ class Register: UIViewController {
     @IBOutlet weak var eventsSheet: UITextField!
     
     @IBOutlet weak var signUp: UIButton!
-    
+
     @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+        
+        override func didReceiveMemoryWarning() {
+              super.didReceiveMemoryWarning()    }
         // shows Google Sign In button
 //        GIDSignIn.sharedInstance()?.presentingViewController = self
 //        GIDSignIn.sharedInstance().signIn()
-    }
+    
     
     
       func validateFields() -> String?{
       
           // Check that all necessary fields are filled in
-          if email.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-          password.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-          schoolName.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-          chapterWebsite.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-          chapterCalendar.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-          joinForm.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-          eventsForm.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-          eventsSheet.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-              facebookLink.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-              instagramLink.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-              twitterLink.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
+        if (email?.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            password?.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            schoolName?.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            chapterWebsite?.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            chapterCalendar?.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            joinForm?.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            eventsForm?.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            eventsSheet?.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            facebookLink?.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            instagramLink?.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            twitterLink?.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "")
           {
                   return "Please ensure that all required fields are completed."
           }
           
-    
           
-          return ""
+          return nil
       }
       
     
@@ -86,14 +86,15 @@ class Register: UIViewController {
           
           if error != nil {
               // There is some sort of error.
-            errorLabel.text = error
+            errorLabel?.text = error
           } else {
               
-              Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (result, err) in
-                  // Check for errors
-                  if let err = err {
-                  //    If there is an error
-                      self.errorLabel.text = "Error creating user."
+            Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (result, err) in
+                  // Check for errors;"
+                  if err != nil {
+                      
+                      // There was an error creating the user
+                    self.errorLabel?.text = error
                   }
                   else {
                       // User has been created
@@ -104,15 +105,16 @@ class Register: UIViewController {
                           
                           if error != nil {
                           // shows error
-                          self.errorLabel.text = "Error creating user."
+                            self.errorLabel?.text = "Error creating user."
                           }
                       
                       }
                       
               
               
-                  self.transitionToWelcome()
+                 
           }
+                 self.transitionToWelcome()
       }
         }
       }
@@ -124,7 +126,4 @@ class Register: UIViewController {
         view.window!.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
     }
-    
-    override func didReceiveMemoryWarning() {
-          super.didReceiveMemoryWarning()    }
 }

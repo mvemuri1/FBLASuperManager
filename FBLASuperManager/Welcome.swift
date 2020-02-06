@@ -20,7 +20,7 @@ class Welcome: UIViewController {
     
     let userDefault = UserDefaults.standard
   
-    @IBOutlet weak var emailOu: UILabel!
+ //   @IBOutlet weak var emailOu: UILabel!
     
     
     override func viewDidLoad() {
