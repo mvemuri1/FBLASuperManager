@@ -63,7 +63,7 @@ class RegistrationInfo: UIViewController {
                 if err != nil {
                     
                     // There was an error creating the user
-                    self.showError("Error creating user")
+            //        self.showError("Error creating user")
                 }
                 else {
                     
@@ -74,12 +74,12 @@ class RegistrationInfo: UIViewController {
                         
                         if error != nil {
                             // Show error message
-                            self.showError("Error saving user data")
+              //              self.showError("Error saving user data")
                         }
                     }
                     
                     // Transition to the home screen
-                    self.transitionToHome()
+       //             self.transitionToHome()
                 }
                 
             }
@@ -89,19 +89,19 @@ class RegistrationInfo: UIViewController {
         }
     }
     
-    func showError(_ message:String) {
+  /*  func showError(_ message:String) {
         
         errorLabel.text = message
         errorLabel.alpha = 1
-    }
+    } */
     
-    func transitionToHome() {
+  /*  func transitionToHome() {
         
         let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? AdminHome
         
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
-        
-    }
+       
+    }*/
     
 
