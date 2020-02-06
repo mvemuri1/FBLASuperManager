@@ -52,66 +52,71 @@ class Register: UIViewController {
 //        GIDSignIn.sharedInstance().signIn()
     }
     
-    func validateField() -> String? {
     
-        // Check that all necessary fields are filled in
-        if email.text == "" ||
-        email.text == "" ||
-        password.text == "" ||
-        schoolName.text == "" ||
-        chapterWebsite.text == "" ||
-        chapterCalendar.text == "" ||
-        joinForm.text == "" ||
-        eventsForm.text == "" ||
-        eventsSheet.text == "" ||
-            facebookLink.text == "" ||
-            instagramLink.text == "" ||
-            twitterLink.text == ""
-        {
-                return "Please ensure that all required fields are completed."
-        }
-        
-        
-        
-        return nil
-    }
+      func validateFields() -> String?{
+      
+          // Check that all necessary fields are filled in
+          if email.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+          password.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+          schoolName.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+          chapterWebsite.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+          chapterCalendar.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+          joinForm.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+          eventsForm.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+          eventsSheet.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+              facebookLink.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+              instagramLink.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+              twitterLink.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
+          {
+                  return "Please ensure that all required fields are completed."
+          }
+          
+    
+          
+          return ""
+      }
+      
+    
+
     
     @IBAction func signUpTapped(_ sender: Any) {
-        
-        // validate the fields
-        let error = validateField()
-        
-        if error != nil {
-            // There is some sort of error.
-            errorLabel.text = error!
-        } else {
-            
-            Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (result, err) in
-                // Check for errors
-                if let err = err {
-                //    If there is an error
-                    self.errorLabel.text = "Error creating user."
-                }
-                else {
-                    // User has been created
-                    let db = Firestore.firestore()
-                    
-                    // creates user
-                    db.collection("chapter").addDocument(data: ["email":self.email, "password":self.password, "chapterCalendar":self.chapterCalendar, "chapterWebsite":self.chapterWebsite, "eventsForm":self.eventsForm, "eventsSheet":self.eventsSheet, "facebookLink":self.facebookLink, "instagramLink":self.instagramLink, "joinForm":self.joinForm, "schoolName":self.schoolName, "twitterLink":self.twitterLink, "uid":result!.user.uid]) { (error) in
-                        
-                        if error != nil {
-                        // shows error
-                        self.errorLabel.text = "Error creating user."
-                        }
-                    
-                    }
-                    
-            }
-            
-                self.transitionToWelcome()
+          
+          // validate the fields
+          let error = validateFields()
+          
+          if error != nil {
+              // There is some sort of error.
+            errorLabel.text = error
+          } else {
+              
+              Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (result, err) in
+                  // Check for errors
+                  if let err = err {
+                  //    If there is an error
+                      self.errorLabel.text = "Error creating user."
+                  }
+                  else {
+                      // User has been created
+                      let db = Firestore.firestore()
+                      
+                      // creates user
+                      db.collection("chapter").addDocument(data: ["email":self.email, "password":self.password, "chapterCalendar":self.chapterCalendar, "chapterWebsite":self.chapterWebsite, "eventsForm":self.eventsForm, "eventsSheet":self.eventsSheet, "facebookLink":self.facebookLink, "instagramLink":self.instagramLink, "joinForm":self.joinForm, "schoolName":self.schoolName, "twitterLink":self.twitterLink, "uid":result!.user.uid]) { (error) in
+                          
+                          if error != nil {
+                          // shows error
+                          self.errorLabel.text = "Error creating user."
+                          }
+                      
+                      }
+                      
+              
+              
+                  self.transitionToWelcome()
+          }
+      }
         }
-    }
-    }
+      }
+    
     
     func transitionToWelcome() {
        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? Welcome
