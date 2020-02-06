@@ -13,7 +13,7 @@ import Firebase
 
 class Register: UIViewController {
     //basic function to load view
-//    let userDefault = UserDefaults()
+// let userDefault = UserDefaults()
     
     @IBOutlet weak var email: UITextField!
     

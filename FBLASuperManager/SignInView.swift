@@ -23,9 +23,6 @@ class SignInView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // shows Google Sign In button
-//        GIDSignIn.sharedInstance()?.presentingViewController = self
-//        GIDSignIn.sharedInstance().signIn()
     }
     
     override func didReceiveMemoryWarning() {
