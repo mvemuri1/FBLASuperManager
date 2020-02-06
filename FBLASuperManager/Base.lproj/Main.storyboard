@@ -642,54 +642,127 @@
             </objects>
             <point key="canvasLocation" x="929" y="-352"/>
         </scene>
-        <!--Sign In View-->
+        <!--Register-->
         <scene sceneID="DT1-vB-4DY">
             <objects>
-                <viewController id="CLe-YF-efc" customClass="SignInView" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CLe-YF-efc" customClass="Register" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zM4-J5-LVU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please sign in through a Google account to continue into FBLA Super Manager. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="of0-tP-BkZ">
-                                <rect key="frame" x="45" y="74" width="325" height="242"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please sign up through a Google account to continue into FBLA Super Manager. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="of0-tP-BkZ">
+                                <rect key="frame" x="45" y="-64" width="325" height="242"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="242" id="aQv-pg-LP7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcI-pv-mN5">
-                                <rect key="frame" x="99" y="479" width="217" height="65"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
-                                <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20A-6m-acF">
+                                <rect key="frame" x="61" y="101" width="293.66666666666669" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUD-p0-Jgj">
+                                <rect key="frame" x="61" y="144" width="293.66666666666669" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="School Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTI-Tb-blH">
+                                <rect key="frame" x="61" y="186" width="293.66666666666669" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="View SIgned Up Events Spreadsheet Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-Nf-YVP">
+                                <rect key="frame" x="61" y="522" width="293.66666666666669" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chapter Website" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IiU-PA-wIy">
+                                <rect key="frame" x="61" y="228" width="293.66666666666669" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chapter Calendar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wva-cE-eDd">
+                                <rect key="frame" x="61" y="270" width="293.66666666666669" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Instagram Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AbN-mN-i6a">
+                                <rect key="frame" x="61" y="312" width="293.66666666666669" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Facebook Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ELv-OI-cyO">
+                                <rect key="frame" x="61" y="396" width="293.66666666666669" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Join Chapter Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-Oe-aPo">
+                                <rect key="frame" x="61" y="438" width="293.66666666666669" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Events Sign Up Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGt-xX-M4R">
+                                <rect key="frame" x="61" y="480" width="293.66666666666669" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Twitter Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mOQ-PJ-HhD">
+                                <rect key="frame" x="61" y="354" width="293.66666666666669" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIT-FO-hEb">
+                                <rect key="frame" x="180" y="564" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <segue destination="Ttw-Qs-ddI" kind="presentation" id="Z9B-nM-1eg"/>
+                                    <action selector="signUpTapped:" destination="CLe-YF-efc" eventType="touchUpInside" id="1Cp-JE-80K"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veg-tl-63z" customClass="GIDSignInButton">
-                                <rect key="frame" x="87" y="275" width="240" height="179"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84k-on-frF">
+                                <rect key="frame" x="186" y="613" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="veg-tl-63z" firstAttribute="centerX" secondItem="rcI-pv-mN5" secondAttribute="centerX" id="4F3-dy-9rr"/>
-                            <constraint firstItem="veg-tl-63z" firstAttribute="top" secondItem="QXh-Ar-wxF" secondAttribute="top" constant="275" id="5Za-2h-TwK"/>
                             <constraint firstItem="of0-tP-BkZ" firstAttribute="centerX" secondItem="zM4-J5-LVU" secondAttribute="centerX" id="Bzg-YX-SH7"/>
                             <constraint firstItem="of0-tP-BkZ" firstAttribute="leading" secondItem="QXh-Ar-wxF" secondAttribute="leading" constant="45" id="Ptq-EG-kdI"/>
-                            <constraint firstItem="rcI-pv-mN5" firstAttribute="leading" secondItem="QXh-Ar-wxF" secondAttribute="leading" constant="99" id="Qpj-5M-Fsh"/>
                             <constraint firstItem="of0-tP-BkZ" firstAttribute="top" secondItem="QXh-Ar-wxF" secondAttribute="top" constant="74" id="a6o-p1-Wzc"/>
-                            <constraint firstItem="veg-tl-63z" firstAttribute="leading" secondItem="QXh-Ar-wxF" secondAttribute="leading" constant="87" id="ex3-Zn-V93"/>
-                            <constraint firstItem="QXh-Ar-wxF" firstAttribute="bottom" secondItem="rcI-pv-mN5" secondAttribute="bottom" constant="172" id="g2A-yP-Icq"/>
-                            <constraint firstItem="rcI-pv-mN5" firstAttribute="top" secondItem="veg-tl-63z" secondAttribute="bottom" constant="25" id="iVZ-1b-rSL"/>
-                            <constraint firstItem="of0-tP-BkZ" firstAttribute="centerX" secondItem="veg-tl-63z" secondAttribute="centerX" id="xVd-p3-6xJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QXh-Ar-wxF"/>
                     </view>
+                    <connections>
+                        <outlet property="chapterCalendar" destination="wva-cE-eDd" id="PKe-ZI-Hj2"/>
+                        <outlet property="chapterWebsite" destination="IiU-PA-wIy" id="hba-gY-XKa"/>
+                        <outlet property="email" destination="20A-6m-acF" id="X25-Dh-qFn"/>
+                        <outlet property="errorLabel" destination="84k-on-frF" id="g8Z-OO-L5M"/>
+                        <outlet property="eventsForm" destination="bGt-xX-M4R" id="c6Q-Ic-fCp"/>
+                        <outlet property="eventsSheet" destination="dXJ-Nf-YVP" id="Vzr-F0-njH"/>
+                        <outlet property="facebookLink" destination="ELv-OI-cyO" id="TQc-NH-REy"/>
+                        <outlet property="instagramLink" destination="AbN-mN-i6a" id="19K-IA-GNh"/>
+                        <outlet property="joinForm" destination="ahv-Oe-aPo" id="G8X-TT-Hp3"/>
+                        <outlet property="password" destination="KUD-p0-Jgj" id="j0R-7F-ATa"/>
+                        <outlet property="signUp" destination="iIT-FO-hEb" id="7tu-Ab-nBE"/>
+                        <outlet property="twitterLink" destination="mOQ-PJ-HhD" id="UgD-4F-HAO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGQ-np-Upe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -700,71 +773,20 @@
             <objects>
                 <viewController id="Ttw-Qs-ddI" customClass="RegistrationInfo" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7h7-U2-YIO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sq5-aF-rPb">
-                                <rect key="frame" x="60.333333333333343" y="20" width="293.66666666666663" height="676.33333333333337"/>
+                                <rect key="frame" x="88" y="293" width="238" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please provide the following  links " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="Shi-6S-Szi">
-                                        <rect key="frame" x="0.0" y="0.0" width="293.66666666666669" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="238" height="65"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="School Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTI-Tb-blH">
-                                        <rect key="frame" x="0.0" y="85" width="293.66666666666669" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chapter Website" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IiU-PA-wIy">
-                                        <rect key="frame" x="0.0" y="139" width="293.66666666666669" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chapter Calendar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wva-cE-eDd">
-                                        <rect key="frame" x="0.0" y="193" width="293.66666666666669" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Instagram Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AbN-mN-i6a">
-                                        <rect key="frame" x="0.0" y="247" width="293.66666666666669" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Twitter Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mOQ-PJ-HhD">
-                                        <rect key="frame" x="0.0" y="301" width="293.66666666666669" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Facebook Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ELv-OI-cyO">
-                                        <rect key="frame" x="0.0" y="355" width="293.66666666666669" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Join Chapter Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-Oe-aPo">
-                                        <rect key="frame" x="0.0" y="409" width="293.66666666666669" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Events Sign Up Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGt-xX-M4R">
-                                        <rect key="frame" x="0.0" y="463" width="293.66666666666669" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="View SIgned Up Events Spreadsheet Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-Nf-YVP">
-                                        <rect key="frame" x="0.0" y="517" width="293.66666666666669" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8s2-Wd-SIy">
-                                        <rect key="frame" x="0.0" y="571" width="293.66666666666669" height="20.333333333333371"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qK3-Jk-Gna">
-                                        <rect key="frame" x="0.0" y="611.33333333333337" width="293.66666666666669" height="65"/>
+                                        <rect key="frame" x="0.0" y="85" width="238" height="65"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                         <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Done">
@@ -787,7 +809,6 @@
                     <connections>
                         <outlet property="chapterCalTextField" destination="wva-cE-eDd" id="XmU-8R-7Cm"/>
                         <outlet property="chapterWebTextField" destination="IiU-PA-wIy" id="aRW-Al-ngf"/>
-                        <outlet property="errorLabel" destination="8s2-Wd-SIy" id="rZg-11-CYR"/>
                         <outlet property="eventsFormTextField" destination="bGt-xX-M4R" id="jmy-sE-c5Z"/>
                         <outlet property="eventsSheetTextField" destination="dXJ-Nf-YVP" id="4Yh-FY-01q"/>
                         <outlet property="facebookTextField" destination="ELv-OI-cyO" id="SXz-0P-pUw"/>

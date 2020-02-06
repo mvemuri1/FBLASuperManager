@@ -10,34 +10,35 @@ import Foundation
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
-import GoogleSignIn
-// import PopupDialog
 
 
-class SignInView: UIViewController, GIDSignInDelegate {
+class SignInView: UIViewController {
     //basic function to load view
  let userDefault = UserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // shows Google Sign In button
-        GIDSignIn.sharedInstance()?.presentingViewController = self
-        GIDSignIn.sharedInstance().signIn()
+//        GIDSignIn.sharedInstance()?.presentingViewController = self
+//        GIDSignIn.sharedInstance().signIn()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func didReceiveMemoryWarning() {
+          super.didReceiveMemoryWarning()    }
+    
+ /*   override func viewDidAppear(_ animated: Bool) {
         if userDefault.bool(forKey: "usersignedin") {
             performSegue(withIdentifier: "Segue_To_Signin", sender: self)
         }
 
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()    }
+ */
+  
     //sets up local variables
     
     
     //login if authenticated from firebase, otherwise displays error message NIL ENTRY PREVENTION included
-    @IBAction func login(_ sender: UIButton) {
+/*    @IBAction func login(_ sender: UIButton) {
         // makes log in button only google
         GIDSignIn.sharedInstance().signIn()
     }
@@ -72,10 +73,10 @@ class SignInView: UIViewController, GIDSignInDelegate {
         func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
             // Perform any operations when the user disconnects from app here.
             // ...
-            
+         
         }
         
-        
+        */
         
     
 

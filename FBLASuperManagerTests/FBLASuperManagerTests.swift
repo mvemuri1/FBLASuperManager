@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import FBLASuperManager
+// @testable import FBLASuperManager
 
 class FBLASuperManagerTests: XCTestCase {
 

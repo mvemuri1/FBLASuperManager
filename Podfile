@@ -10,7 +10,6 @@ target 'FBLASuperManager' do
 pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
-pod 'GoogleSignIn'
 pod 'Firebase/Firestore'
 pod 'Firebase/Analytics'
 
