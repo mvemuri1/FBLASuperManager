@@ -13,7 +13,7 @@ import Firebase
 
 class Register: UIViewController {
     //basic function to load view
- // let userDefault = UserDefaults()
+    let userDefault = UserDefaults()
     
     @IBOutlet weak var email: UITextField!
     
@@ -100,8 +100,22 @@ class Register: UIViewController {
                       // User has been created
                       let db = Firestore.firestore()
                       
+                    let docData: [String: Any] = [
+                    "email":self.email,
+                    "password":self.password,
+                    "chapterCalendar":self.chapterCalendar,
+                    "chapterWebsite":self.chapterWebsite,
+                    "eventsForm":self.eventsForm,
+                    "eventsSheet":self.eventsSheet,
+                    "facebookLink":self.facebookLink,
+                    "instagramLink":self.instagramLink,
+                    "joinForm":self.joinForm,
+                    "schoolName":self.schoolName,
+                    "twitterLink":self.twitterLink,
+                    "uid":result!.user.uid]
+                    
                       // creates user
-                      db.collection("chapter").addDocument(data: ["email":self.email, "password":self.password, "chapterCalendar":self.chapterCalendar, "chapterWebsite":self.chapterWebsite, "eventsForm":self.eventsForm, "eventsSheet":self.eventsSheet, "facebookLink":self.facebookLink, "instagramLink":self.instagramLink, "joinForm":self.joinForm, "schoolName":self.schoolName, "twitterLink":self.twitterLink, "uid":result!.user.uid]) { (error) in
+                      db.collection("chapter").addDocument(data: docData) { (error) in
                           
                           if error != nil {
                           // shows error

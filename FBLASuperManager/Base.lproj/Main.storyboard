@@ -520,6 +520,9 @@
                         <viewLayoutGuide key="safeArea" id="6xL-WU-QZN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="DxZ-ZA-Ihw"/>
+                    <connections>
+                        <outlet property="schoolName" destination="iMH-44-uoj" id="9Dm-9L-D4t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5I-LS-4Ga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
