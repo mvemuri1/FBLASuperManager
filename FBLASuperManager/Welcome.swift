@@ -23,7 +23,7 @@ class Welcome: UIViewController {
   
  //   @IBOutlet weak var emailOu: UILabel!
     
-    @IBOutlet weak var schoolName: UILabel!
+      @IBOutlet weak var schoolName: UILabel!
     
  /*   let db = Firestore.firestore()
     

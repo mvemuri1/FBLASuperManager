@@ -35,27 +35,31 @@ class SignInView: UIViewController {
         // TODO: Validate Text Fields
         
         // Create cleaned versions of the text field
-        let emailT = email.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let passwordT = password.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let email1 = email.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password1 = password.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         // Signing in the user
-        Auth.auth().signIn(withEmail: emailT, password: passwordT) { (result, error) in
+        Auth.auth().signIn(withEmail: email1, password: password1) { (result, error) in
             
             if error != nil {
                 // Couldn't sign in
                 self.errorLabel.text = error!.localizedDescription
-                self.errorLabel.alpha = 1
+                self.errorLabel.alpha = 3
             }
             else {
+                self.transitionToWelcome()
                 
-                let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? Welcome
-                
-                self.view.window?.rootViewController = homeViewController
-                self.view.window?.makeKeyAndVisible()
             }
         }
     }
-
+    func transitionToWelcome() {
+          let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? Welcome
+           
+           view.window!.rootViewController = homeViewController
+           view.window?.makeKeyAndVisible()
+        
+        
+        
     /*   override func viewDidAppear(_ animated: Bool) {
         if userDefault.bool(forKey: "usersignedin") {
             performSegue(withIdentifier: "Segue_To_Signin", sender: self)
@@ -64,51 +68,10 @@ class SignInView: UIViewController {
     }
  */
   
-    //sets up local variables
-    
-    
-    //login if authenticated from firebase, otherwise displays error message NIL ENTRY PREVENTION included
-/*    @IBAction func login(_ sender: UIButton) {
-        // makes log in button only google
-        GIDSignIn.sharedInstance().signIn()
-    }
-        
-    
-    // signs in from Google Sign In
-        func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
-          // ...
-          if let error = error {
-            print(error.localizedDescription)
-            return
-          }
-            // checks to see if user is in our database
-          guard let authentication = user.authentication else { return }
-          let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                            accessToken: authentication.accessToken)
-          // ...
-            
-            Auth.auth().signIn(with: credential) { (authResult, error) in
-              if let error = error {
-                print(error.localizedDescription)
-                } else {
-                print("Login Successful.")
-              }
-              // User is signed in
-              // ...
-            }
-            
-        }
-        
-    
-        func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
-            // Perform any operations when the user disconnects from app here.
-            // ...
-         
-        }
-        
-        */
+   
         
     
 
 }
 
+}

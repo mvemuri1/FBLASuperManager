@@ -48,9 +48,7 @@ class Register: UIViewController {
         
         override func didReceiveMemoryWarning() {
               super.didReceiveMemoryWarning()    }
-        // shows Google Sign In button
-//        GIDSignIn.sharedInstance()?.presentingViewController = self
-//        GIDSignIn.sharedInstance().signIn()
+    
     
     
     
@@ -100,22 +98,21 @@ class Register: UIViewController {
                       // User has been created
                       let db = Firestore.firestore()
                       
-                    let docData: [String: Any] = [
-                    "email":self.email,
-                    "password":self.password,
-                    "chapterCalendar":self.chapterCalendar,
-                    "chapterWebsite":self.chapterWebsite,
-                    "eventsForm":self.eventsForm,
-                    "eventsSheet":self.eventsSheet,
-                    "facebookLink":self.facebookLink,
-                    "instagramLink":self.instagramLink,
-                    "joinForm":self.joinForm,
-                    "schoolName":self.schoolName,
-                    "twitterLink":self.twitterLink,
-                    "uid":result!.user.uid]
                     
                       // creates user
-                      db.collection("chapter").addDocument(data: docData) { (error) in
+                      db.collection("chapter").addDocument(data: [
+                      "email":self.email,
+                      "password":self.password,
+                      "chapterCalendar":self.chapterCalendar,
+                      "chapterWebsite":self.chapterWebsite,
+                      "eventsForm":self.eventsForm,
+                      "eventsSheet":self.eventsSheet,
+                      "facebookLink":self.facebookLink,
+                      "instagramLink":self.instagramLink,
+                      "joinForm":self.joinForm,
+                      "schoolName":self.schoolName,
+                      "twitterLink":self.twitterLink,
+                      "uid":result!.user.uid]) { (error) in
                           
                           if error != nil {
                           // shows error
