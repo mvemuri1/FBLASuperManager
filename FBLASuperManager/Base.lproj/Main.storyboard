@@ -15,9 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPM-wJ-Oa2">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPM-wJ-Oa2">
                                 <rect key="frame" x="133" y="195" width="149" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="pOV-wZ-fX2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                 <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Admin">
@@ -27,9 +29,11 @@
                                     <segue destination="i5L-zM-eur" kind="presentation" id="5Be-bX-Qk1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSo-fe-jQZ">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSo-fe-jQZ">
                                 <rect key="frame" x="99" y="395" width="217" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="pmi-Of-JdY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                 <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Student">
@@ -41,6 +45,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vSo-fe-jQZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="9IX-zg-IGP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vSo-fe-jQZ" secondAttribute="bottom" constant="294" id="DFE-C2-awt"/>
+                            <constraint firstItem="NPM-wJ-Oa2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SIj-7e-1qL"/>
+                            <constraint firstItem="NPM-wJ-Oa2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="SWk-Rp-ewJ"/>
+                            <constraint firstItem="NPM-wJ-Oa2" firstAttribute="centerX" secondItem="vSo-fe-jQZ" secondAttribute="centerX" id="WiZ-YC-u4N"/>
+                            <constraint firstItem="NPM-wJ-Oa2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="195" id="ikc-fe-BUy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -56,20 +68,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pNR-dI-gR8">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNR-dI-gR8">
                                 <rect key="frame" x="0.0" y="279" width="414" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Choose Your Chapter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIr-QT-Jdb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please Choose Your Chapter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIr-QT-Jdb">
                                 <rect key="frame" x="98" y="212" width="219" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFf-dF-dIK">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFf-dF-dIK">
                                 <rect key="frame" x="100" y="481" width="217" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                 <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Next">
@@ -81,6 +90,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pNR-dI-gR8" firstAttribute="top" secondItem="bIr-QT-Jdb" secondAttribute="bottom" constant="46" id="955-ME-cQa"/>
+                            <constraint firstItem="bIr-QT-Jdb" firstAttribute="leading" secondItem="UVE-lZ-6i4" secondAttribute="leading" constant="98" id="L4M-98-oFj"/>
+                            <constraint firstItem="bIr-QT-Jdb" firstAttribute="top" secondItem="UVE-lZ-6i4" secondAttribute="top" constant="212" id="Ocv-ew-vJC"/>
+                            <constraint firstItem="pNR-dI-gR8" firstAttribute="leading" secondItem="UVE-lZ-6i4" secondAttribute="leading" id="VUk-yF-6xW"/>
+                            <constraint firstItem="bIr-QT-Jdb" firstAttribute="centerX" secondItem="pNR-dI-gR8" secondAttribute="centerX" id="We0-pU-K9d"/>
+                            <constraint firstItem="sFf-dF-dIK" firstAttribute="leading" secondItem="UVE-lZ-6i4" secondAttribute="leading" constant="100" id="fmX-mX-AL9"/>
+                            <constraint firstItem="bIr-QT-Jdb" firstAttribute="centerX" secondItem="LQ5-m1-Don" secondAttribute="centerX" id="ghf-OC-1Yy"/>
+                            <constraint firstItem="bIr-QT-Jdb" firstAttribute="trailing" secondItem="sFf-dF-dIK" secondAttribute="trailing" id="nff-Km-6wp"/>
+                            <constraint firstItem="UVE-lZ-6i4" firstAttribute="bottom" secondItem="sFf-dF-dIK" secondAttribute="bottom" constant="170" id="pYo-Ed-Scr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UVE-lZ-6i4"/>
                     </view>
                 </viewController>
@@ -96,9 +116,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26f-kn-VCF">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26f-kn-VCF">
                                 <rect key="frame" x="99" y="196" width="217" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                 <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Sign-In">
@@ -108,9 +127,8 @@
                                     <segue destination="Hby-Ma-HJc" kind="presentation" id="lDi-yc-EqZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rc6-wW-Jjt">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rc6-wW-Jjt">
                                 <rect key="frame" x="99" y="309" width="217" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                 <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Register">
@@ -123,6 +141,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="26f-kn-VCF" firstAttribute="leading" secondItem="aBJ-om-8dN" secondAttribute="leading" constant="99" id="JrK-NM-MsC"/>
+                            <constraint firstItem="rc6-wW-Jjt" firstAttribute="top" secondItem="26f-kn-VCF" secondAttribute="bottom" constant="48" id="Laj-5g-ffJ"/>
+                            <constraint firstItem="26f-kn-VCF" firstAttribute="top" secondItem="aBJ-om-8dN" secondAttribute="top" constant="196" id="NQd-0r-hPH"/>
+                            <constraint firstItem="26f-kn-VCF" firstAttribute="leading" secondItem="rc6-wW-Jjt" secondAttribute="leading" id="RLg-AH-slE"/>
+                            <constraint firstItem="26f-kn-VCF" firstAttribute="centerX" secondItem="jQy-U5-K3t" secondAttribute="centerX" id="UDy-sK-JQO"/>
+                            <constraint firstItem="26f-kn-VCF" firstAttribute="trailing" secondItem="rc6-wW-Jjt" secondAttribute="trailing" id="ZIv-LV-QM1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aBJ-om-8dN"/>
                     </view>
                 </viewController>
@@ -360,7 +386,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Question" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WeR-SL-la3">
                                 <rect key="frame" x="87" y="341" width="240" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="JK7-eK-2n0"/>
+                                    <constraint firstAttribute="height" constant="34" id="9th-u0-AF8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -379,10 +405,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaK-EG-1rf">
-                                <rect key="frame" x="61" y="537" width="293.66666666666669" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaK-EG-1rf">
+                                <rect key="frame" x="61" y="537" width="292" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="jrj-hH-0jT"/>
+                                    <constraint firstAttribute="height" constant="65" id="LdA-k5-XXc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="35"/>
                                 <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -393,19 +419,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Gei-c7-AUG" firstAttribute="centerX" secondItem="yaK-EG-1rf" secondAttribute="centerX" id="4Kx-rP-Lsr"/>
-                            <constraint firstItem="Gei-c7-AUG" firstAttribute="top" secondItem="WeR-SL-la3" secondAttribute="bottom" constant="8" id="5YK-HM-fLc"/>
-                            <constraint firstItem="L0a-6k-vVB" firstAttribute="trailing" secondItem="WeR-SL-la3" secondAttribute="trailing" id="7GW-Qj-GlX"/>
-                            <constraint firstItem="WeR-SL-la3" firstAttribute="leading" secondItem="Gei-c7-AUG" secondAttribute="leading" id="9cz-FW-C5Q"/>
-                            <constraint firstItem="WeR-SL-la3" firstAttribute="centerY" secondItem="uLr-uW-ZRI" secondAttribute="centerY" id="GFO-PS-oFe"/>
-                            <constraint firstItem="L0a-6k-vVB" firstAttribute="leading" secondItem="2oF-3Q-lOT" secondAttribute="leading" constant="87" id="HWu-Gv-JHv"/>
-                            <constraint firstItem="2oF-3Q-lOT" firstAttribute="bottom" secondItem="yaK-EG-1rf" secondAttribute="bottom" constant="65" id="HiN-j4-Q1m"/>
-                            <constraint firstItem="WeR-SL-la3" firstAttribute="top" secondItem="L0a-6k-vVB" secondAttribute="bottom" constant="33" id="IWd-wu-SD3"/>
-                            <constraint firstItem="yaK-EG-1rf" firstAttribute="top" secondItem="Gei-c7-AUG" secondAttribute="bottom" constant="26" id="foD-Uf-9Oz"/>
-                            <constraint firstItem="L0a-6k-vVB" firstAttribute="leading" secondItem="WeR-SL-la3" secondAttribute="leading" id="kck-3m-hAL"/>
-                            <constraint firstItem="WeR-SL-la3" firstAttribute="trailing" secondItem="Gei-c7-AUG" secondAttribute="trailing" id="oIa-qO-Qxp"/>
-                            <constraint firstItem="L0a-6k-vVB" firstAttribute="top" secondItem="2oF-3Q-lOT" secondAttribute="top" constant="59" id="pQs-IS-9Ha"/>
-                            <constraint firstItem="L0a-6k-vVB" firstAttribute="centerX" secondItem="uLr-uW-ZRI" secondAttribute="centerX" id="zZL-M6-BxE"/>
+                            <constraint firstItem="WeR-SL-la3" firstAttribute="centerY" secondItem="uLr-uW-ZRI" secondAttribute="centerY" id="5IW-DV-2fn"/>
+                            <constraint firstItem="L0a-6k-vVB" firstAttribute="trailing" secondItem="WeR-SL-la3" secondAttribute="trailing" id="8Ne-cF-8Cj"/>
+                            <constraint firstItem="2oF-3Q-lOT" firstAttribute="bottom" secondItem="yaK-EG-1rf" secondAttribute="bottom" constant="65" id="CSs-m8-yNC"/>
+                            <constraint firstItem="WeR-SL-la3" firstAttribute="top" secondItem="L0a-6k-vVB" secondAttribute="bottom" constant="33" id="WQn-7R-FCe"/>
+                            <constraint firstItem="L0a-6k-vVB" firstAttribute="top" secondItem="2oF-3Q-lOT" secondAttribute="top" constant="59" id="XL6-Ck-Dq6"/>
+                            <constraint firstItem="L0a-6k-vVB" firstAttribute="leading" secondItem="2oF-3Q-lOT" secondAttribute="leading" constant="87" id="XUq-Vs-NRV"/>
+                            <constraint firstItem="WeR-SL-la3" firstAttribute="trailing" secondItem="Gei-c7-AUG" secondAttribute="trailing" id="dH5-rt-SqS"/>
+                            <constraint firstItem="L0a-6k-vVB" firstAttribute="leading" secondItem="WeR-SL-la3" secondAttribute="leading" id="ecF-8D-VOC"/>
+                            <constraint firstItem="Gei-c7-AUG" firstAttribute="centerX" secondItem="yaK-EG-1rf" secondAttribute="centerX" id="gnE-qX-AkG"/>
+                            <constraint firstItem="yaK-EG-1rf" firstAttribute="top" secondItem="Gei-c7-AUG" secondAttribute="bottom" constant="26" id="hDi-Ft-QOL"/>
+                            <constraint firstItem="Gei-c7-AUG" firstAttribute="top" secondItem="WeR-SL-la3" secondAttribute="bottom" constant="8" id="s1x-au-aYx"/>
+                            <constraint firstItem="WeR-SL-la3" firstAttribute="leading" secondItem="Gei-c7-AUG" secondAttribute="leading" id="ubH-yt-mxj"/>
+                            <constraint firstItem="L0a-6k-vVB" firstAttribute="centerX" secondItem="uLr-uW-ZRI" secondAttribute="centerX" id="vZM-Mm-4ov"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2oF-3Q-lOT"/>
                     </view>
@@ -466,7 +492,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <wkWebView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOo-8o-HoQ">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOo-8o-HoQ">
                                 <rect key="frame" x="5" y="169" width="404" height="493"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -474,10 +500,10 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF0-2f-qqK">
-                                <rect key="frame" x="186" y="118" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/school name/" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="iMH-44-uoj">
+                                <rect key="frame" x="60" y="98" width="317" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -485,7 +511,7 @@
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6xL-WU-QZN" firstAttribute="trailing" secondItem="dOo-8o-HoQ" secondAttribute="trailing" constant="5" id="1hY-aW-gg5"/>
-                            <constraint firstItem="dOo-8o-HoQ" firstAttribute="top" secondItem="N9L-Z1-bqf" secondAttribute="bottom" constant="20" id="87s-q8-xf0"/>
+                            <constraint firstItem="dOo-8o-HoQ" firstAttribute="top" secondItem="N9L-Z1-bqf" secondAttribute="bottom" constant="71" id="87s-q8-xf0"/>
                             <constraint firstItem="dOo-8o-HoQ" firstAttribute="leading" secondItem="6xL-WU-QZN" secondAttribute="leading" constant="5" id="B0S-CO-hec"/>
                             <constraint firstItem="6xL-WU-QZN" firstAttribute="bottom" secondItem="dOo-8o-HoQ" secondAttribute="bottom" constant="5" id="HAa-XR-aca"/>
                             <constraint firstItem="N9L-Z1-bqf" firstAttribute="top" secondItem="6xL-WU-QZN" secondAttribute="top" constant="40" id="bc2-G9-PpW"/>
@@ -494,9 +520,6 @@
                         <viewLayoutGuide key="safeArea" id="6xL-WU-QZN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="DxZ-ZA-Ihw"/>
-                    <connections>
-                        <outlet property="emailOu" destination="IF0-2f-qqK" id="RbH-DE-IeW"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5I-LS-4Ga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -532,21 +555,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please sign in through a Google account to continue into FBLA Super Manager. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-AR-yab">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please sign in through a Google account to continue into FBLA Super Manager. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-AR-yab">
                                 <rect key="frame" x="45" y="74" width="325" height="242"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="tFA-n6-EQe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G00-Oj-vVv" customClass="GIDSignInButton">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G00-Oj-vVv" customClass="GIDSignInButton">
                                 <rect key="frame" x="87" y="308" width="240" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWe-qK-dvg">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWe-qK-dvg">
                                 <rect key="frame" x="99" y="479" width="217" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                 <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Next">
@@ -558,6 +581,18 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="G00-Oj-vVv" secondAttribute="bottom" constant="348" id="0ld-Ob-0v9"/>
+                            <constraint firstItem="G00-Oj-vVv" firstAttribute="top" secondItem="wxi-6h-uH5" secondAttribute="top" constant="308" id="3Bc-xB-3eL"/>
+                            <constraint firstItem="G00-Oj-vVv" firstAttribute="leading" secondItem="wxi-6h-uH5" secondAttribute="leading" constant="87" id="6XV-Nl-Iv9"/>
+                            <constraint firstItem="wxi-6h-uH5" firstAttribute="bottom" secondItem="EWe-qK-dvg" secondAttribute="bottom" constant="172" id="HyA-C9-Hnk"/>
+                            <constraint firstItem="ecQ-AR-yab" firstAttribute="top" secondItem="wxi-6h-uH5" secondAttribute="top" constant="74" id="LmA-NY-043"/>
+                            <constraint firstItem="ecQ-AR-yab" firstAttribute="leading" secondItem="wxi-6h-uH5" secondAttribute="leading" constant="45" id="P4N-vN-Ks6"/>
+                            <constraint firstItem="ecQ-AR-yab" firstAttribute="centerX" secondItem="P4P-A1-z6L" secondAttribute="centerX" id="P5N-Lb-Zv9"/>
+                            <constraint firstItem="EWe-qK-dvg" firstAttribute="leading" secondItem="wxi-6h-uH5" secondAttribute="leading" constant="99" id="Rem-cW-D4F"/>
+                            <constraint firstItem="G00-Oj-vVv" firstAttribute="centerX" secondItem="EWe-qK-dvg" secondAttribute="centerX" id="XT2-Dc-8Au"/>
+                            <constraint firstItem="ecQ-AR-yab" firstAttribute="centerX" secondItem="G00-Oj-vVv" secondAttribute="centerX" id="hhR-Di-Zh6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wxi-6h-uH5"/>
                     </view>
                 </viewController>
@@ -573,27 +608,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lxt-gg-CfS">
-                                <rect key="frame" x="0.0" y="687" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="EMG-Wf-3vP"/>
-                                    <tabBarItem systemItem="more" id="pKd-Or-tzB"/>
-                                </items>
-                            </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuA-Fh-y9L">
-                                <rect key="frame" x="99" y="196" width="217" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuA-Fh-y9L">
+                                <rect key="frame" x="99" y="196" width="216" height="65"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                 <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Sign-In">
                                     <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uh-Jg-PeO">
-                                <rect key="frame" x="99" y="309" width="217" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uh-Jg-PeO">
+                                <rect key="frame" x="122.66666666666669" y="309" width="169" height="65"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                 <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Register">
@@ -603,6 +627,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="4uh-Jg-PeO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wuA-Fh-y9L" secondAttribute="leading" id="2VO-ah-GVF"/>
+                            <constraint firstItem="4uh-Jg-PeO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wuA-Fh-y9L" secondAttribute="trailing" id="gKd-ns-d67"/>
+                            <constraint firstItem="4uh-Jg-PeO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eBf-XG-FDq" secondAttribute="leading" id="i0I-Kj-fvc"/>
+                            <constraint firstItem="4uh-Jg-PeO" firstAttribute="top" secondItem="LJW-dI-Wd6" secondAttribute="top" constant="309" id="oVs-cx-ohM"/>
+                            <constraint firstItem="4uh-Jg-PeO" firstAttribute="centerX" secondItem="LJW-dI-Wd6" secondAttribute="centerX" id="q7Y-Wf-wvv"/>
+                            <constraint firstItem="4uh-Jg-PeO" firstAttribute="top" secondItem="wuA-Fh-y9L" secondAttribute="bottom" constant="48" id="uNR-tC-BXb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eBf-XG-FDq"/>
                     </view>
                 </viewController>
@@ -618,16 +650,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please sign in through a Google account to continue into FBLA Super Manager. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="of0-tP-BkZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please sign in through a Google account to continue into FBLA Super Manager. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="of0-tP-BkZ">
                                 <rect key="frame" x="45" y="74" width="325" height="242"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="aQv-pg-LP7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcI-pv-mN5">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcI-pv-mN5">
                                 <rect key="frame" x="99" y="479" width="217" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
                                 <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Next">
@@ -637,13 +670,24 @@
                                     <segue destination="Ttw-Qs-ddI" kind="presentation" id="Z9B-nM-1eg"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="veg-tl-63z" customClass="GIDSignInButton">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veg-tl-63z" customClass="GIDSignInButton">
                                 <rect key="frame" x="87" y="275" width="240" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="veg-tl-63z" firstAttribute="centerX" secondItem="rcI-pv-mN5" secondAttribute="centerX" id="4F3-dy-9rr"/>
+                            <constraint firstItem="veg-tl-63z" firstAttribute="top" secondItem="QXh-Ar-wxF" secondAttribute="top" constant="275" id="5Za-2h-TwK"/>
+                            <constraint firstItem="of0-tP-BkZ" firstAttribute="centerX" secondItem="zM4-J5-LVU" secondAttribute="centerX" id="Bzg-YX-SH7"/>
+                            <constraint firstItem="of0-tP-BkZ" firstAttribute="leading" secondItem="QXh-Ar-wxF" secondAttribute="leading" constant="45" id="Ptq-EG-kdI"/>
+                            <constraint firstItem="rcI-pv-mN5" firstAttribute="leading" secondItem="QXh-Ar-wxF" secondAttribute="leading" constant="99" id="Qpj-5M-Fsh"/>
+                            <constraint firstItem="of0-tP-BkZ" firstAttribute="top" secondItem="QXh-Ar-wxF" secondAttribute="top" constant="74" id="a6o-p1-Wzc"/>
+                            <constraint firstItem="veg-tl-63z" firstAttribute="leading" secondItem="QXh-Ar-wxF" secondAttribute="leading" constant="87" id="ex3-Zn-V93"/>
+                            <constraint firstItem="QXh-Ar-wxF" firstAttribute="bottom" secondItem="rcI-pv-mN5" secondAttribute="bottom" constant="172" id="g2A-yP-Icq"/>
+                            <constraint firstItem="rcI-pv-mN5" firstAttribute="top" secondItem="veg-tl-63z" secondAttribute="bottom" constant="25" id="iVZ-1b-rSL"/>
+                            <constraint firstItem="of0-tP-BkZ" firstAttribute="centerX" secondItem="veg-tl-63z" secondAttribute="centerX" id="xVd-p3-6xJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QXh-Ar-wxF"/>
                     </view>
                 </viewController>
