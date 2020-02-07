@@ -20,10 +20,6 @@ class Welcome: UIViewController {
     //basic function to load view
     
   //  let userDefault = UserDefaults.standard
-  
- //   @IBOutlet weak var emailOu: UILabel!
-    
-      @IBOutlet weak var schoolName: UILabel!
     
  /*   let db = Firestore.firestore()
     

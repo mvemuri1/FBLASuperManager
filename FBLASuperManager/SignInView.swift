@@ -15,6 +15,7 @@ import FirebaseDatabase
 class SignInView: UIViewController {
     //basic function to load view
 // let userDefault = UserDefaults()
+ //   var window: UIWindow?
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -44,19 +45,22 @@ class SignInView: UIViewController {
                 self.errorLabel.alpha = 3
             }
             else {
-                self.transitionToWelcome()
-                
+                let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? Welcome
+                          
+                self.view.window!.rootViewController = homeViewController
+                self.view.window?.makeKeyAndVisible()
+                       
             }
         }
     }
-    func transitionToWelcome() {
+ /*   func transitionToWelcome() {
           let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? Welcome
            
            view.window!.rootViewController = homeViewController
            view.window?.makeKeyAndVisible()
         
         
-        
+        */
     /*   override func viewDidAppear(_ animated: Bool) {
         if userDefault.bool(forKey: "usersignedin") {
             performSegue(withIdentifier: "Segue_To_Signin", sender: self)
@@ -71,4 +75,4 @@ class SignInView: UIViewController {
 
 }
 
-}
+

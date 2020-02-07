@@ -74,31 +74,40 @@ class Register: UIViewController {
           return nil
       }
       
+    func showError(_ message:String) {
+              
+              errorLabel.text = message
+              errorLabel.alpha = 1
+          }
     
 
     
     @IBAction func signUpTapped(_ sender: Any) {
           
           // validate the fields
-          let error = validateFields()
+         let error = validateFields()
           
           if error != nil {
-              // There is some sort of error.
-            errorLabel?.text = error
-          } else {
               
+              // There's something wrong with the fields, show error message
+              showError(error!)
+          }
+          else {
+              
+              // Create the user
             Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (result, err) in
-                  // Check for errors;"
+                  
+                  // Check for errors
                   if err != nil {
                       
                       // There was an error creating the user
-                    self.errorLabel?.text = error
+                      self.showError("Error creating user")
                   }
                   else {
-                      // User has been created
+                      
+                      // User was created successfully, now store the first name and last name
                       let db = Firestore.firestore()
                       
-                    
                       // creates user
                       db.collection("chapter").addDocument(data: [
                       "email":self.email,
@@ -116,20 +125,22 @@ class Register: UIViewController {
                           
                           if error != nil {
                           // shows error
-                            self.errorLabel?.text = "Error creating user."
+                          self.showError("Error saving user data")
                           }
                       
                       }
                       
-              
+              self.transitionToWelcome()
               
                  
           }
-                 self.transitionToWelcome()
+                 
       }
         }
-      }
+    }
+      
     
+   
     
     func transitionToWelcome() {
        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? Welcome
@@ -138,3 +149,4 @@ class Register: UIViewController {
         view.window?.makeKeyAndVisible()
     }
 }
+
