@@ -20,10 +20,12 @@ class Register: UIViewController {
     @IBOutlet weak var password: UITextField!
     
     @IBOutlet weak var schoolName: UITextField!
+    
 
     @IBOutlet weak var chapterWebsite: UITextField!
     
     @IBOutlet weak var chapterCalendar: UITextField!
+    
 
     @IBOutlet weak var instagramLink: UITextField!
     
@@ -51,7 +53,7 @@ class Register: UIViewController {
         override func didReceiveMemoryWarning() {
               super.didReceiveMemoryWarning()    }
     
-    
+
     
     
       func validateFields() -> String?{
@@ -76,6 +78,7 @@ class Register: UIViewController {
           return nil
       }
       
+    //shows error to user through error label
     func showError(_ message:String) {
               
               errorLabel.text = message
@@ -99,6 +102,7 @@ class Register: UIViewController {
               // Create the user
             Auth.auth().createUser(withEmail: email.text!, password: password.text! ) { (result, err) in
                 
+                
            // Auth.auth().createUser(withEmail: self.email.text!, password: self.password.text!) { authResult, error in
                   
                   // Check for errors
@@ -113,33 +117,34 @@ class Register: UIViewController {
                       let db = Firestore.firestore()
                       
                       // creates user
-                      db.collection("chapter").addDocument(data: [
-                      "chapterCalendar":self.chapterCalendar,
-                      "chapterWebsite":self.chapterWebsite,
-                      "eventsForm":self.eventsForm,
-                      "eventsSheet":self.eventsSheet,
-                      "facebookLink":self.facebookLink,
-                      "instagramLink":self.instagramLink,
-                      "joinForm":self.joinForm,
-                      "schoolName":self.schoolName,
-                      "twitterLink":self.twitterLink,
-                      "uid":result!.user.uid])
-                          
-                          if error != nil {
-                          // shows error
-                          self.showError("Error saving user data")
-                          }
                       
-                      }
+                    
+                    db.collection("chapter").addDocument(data:[
+                        "chapterCalendar":self.chapterCalendar.text,
+                        "chapterWebsite":self.chapterWebsite.text,
+                        "eventsForm":self.eventsForm.text,
+                        "eventsSheet":self.eventsSheet.text,
+                        "facebookLink":self.facebookLink.text,
+                        "instagramLink":self.instagramLink.text,
+                        "joinForm":self.joinForm.text,
+                        "schoolName":self.schoolName.text,
+                        "twitterLink":self.twitterLink.text,
+                    "uid":result!.user.uid]) { (error) in
+                        if error != nil {
+                        // shows error
+                          self.showError("Error saving user data")
+                        }
+                    }
+                      
+                }}
                       
    //           self.transitionToWelcome()
-              
                 
           }
                  
       }
         }
-    }
+    
       
     
    
@@ -152,5 +157,4 @@ class Register: UIViewController {
         
         
     }*/
-
 
