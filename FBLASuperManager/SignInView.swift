@@ -24,6 +24,7 @@ class SignInView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        errorLabel.alpha = 0
     }
     
     override func didReceiveMemoryWarning() {

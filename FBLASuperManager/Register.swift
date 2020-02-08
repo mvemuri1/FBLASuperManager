@@ -43,6 +43,8 @@ class Register: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        errorLabel.alpha = 0
+        
         
     }
         
@@ -95,7 +97,9 @@ class Register: UIViewController {
           else {
               
               // Create the user
-            Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (result, err) in
+            Auth.auth().createUser(withEmail: email.text!, password: password.text! ) { (result, err) in
+                
+           // Auth.auth().createUser(withEmail: self.email.text!, password: self.password.text!) { authResult, error in
                   
                   // Check for errors
                   if err != nil {
@@ -110,8 +114,6 @@ class Register: UIViewController {
                       
                       // creates user
                       db.collection("chapter").addDocument(data: [
-                      "email":self.email,
-                      "password":self.password,
                       "chapterCalendar":self.chapterCalendar,
                       "chapterWebsite":self.chapterWebsite,
                       "eventsForm":self.eventsForm,
@@ -121,7 +123,7 @@ class Register: UIViewController {
                       "joinForm":self.joinForm,
                       "schoolName":self.schoolName,
                       "twitterLink":self.twitterLink,
-                      "uid":result!.user.uid]) { (error) in
+                      "uid":result!.user.uid])
                           
                           if error != nil {
                           // shows error
@@ -132,7 +134,7 @@ class Register: UIViewController {
                       
    //           self.transitionToWelcome()
               
-                 
+                
           }
                  
       }
@@ -142,13 +144,13 @@ class Register: UIViewController {
     
    
     
-    func transitionToWelcome() {
+   /* func transitionToWelcome() {
        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? TabbarAdmin
         
         view.window!.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
         
         
-    }
-}
+    }*/
+
 
