@@ -130,7 +130,7 @@ class Register: UIViewController {
                       
                       }
                       
-              self.transitionToWelcome()
+   //           self.transitionToWelcome()
               
                  
           }
@@ -143,10 +143,12 @@ class Register: UIViewController {
    
     
     func transitionToWelcome() {
-       let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? Welcome
+       let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? TabbarAdmin
         
         view.window!.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
+        
+        
     }
 }
 
