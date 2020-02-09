@@ -43,13 +43,17 @@ class Register: UIViewController {
 
     @IBOutlet weak var errorLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         errorLabel.alpha = 0
-        
+        setUpElements()
         
     }
         
+    func setUpElements() {
+        Utilities.styleFilledButton(signUp)
+    }
         override func didReceiveMemoryWarning() {
               super.didReceiveMemoryWarning()    }
     

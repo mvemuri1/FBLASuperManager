@@ -10,11 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var admin: UIButton!
+    
+    @IBOutlet weak var student: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setUpElements()
     }
-
-
+          
+    func setUpElements() {
+          
+    // Hide the error label
+          
+    // Make admin button filled
+        Utilities.styleFilledButton(admin!)
+        
+    // Make student button hollow
+        Utilities.styleHollowButton(student!)
+            
+    }
 }
 

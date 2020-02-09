@@ -12,11 +12,15 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 import FirebaseFirestore
+import WebKit
 
 
 class Welcome: UIViewController {
     
+    @IBOutlet weak var calendar: WKWebView!
     
+    
+   
     //basic function to load view
     
   //  let userDefault = UserDefaults.standard
@@ -28,11 +32,43 @@ class Welcome: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        }
+        
+        let db = Firestore.firestore()
+        
+        var cal: String!
+
+      let ref = db.collection("chapter").document("mt8kgPGsCmVhNtd3L8us")
+       ref.getDocument { (snapshot, err) in
+           if let data = snapshot?.data() {
+           cal = (data["chapterCalendar"]) as! String
+           } else {
+            print("google.com")
+           }
+       }
+        
+        if cal != nil {
+            let url = URL(string: cal!)
+        
+        let request = URLRequest (url: url!)
+        
+            calendar.load(request) }
+            
+    /*    } else {
+            let url = URL(string: "https://meg551.wixsite.com/mysite")
+            
+            let request = URLRequest (url:url!)
+            
+            calendar.load(request)
+        } */
+        
+        
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()    }
  
+    
 
     
 
