@@ -6,7 +6,6 @@
 //  Copyright © 2020 Megha Vemuri. All rights reserved.
 //
 
-import Foundation
 import UIKit
 // Imports Authentication & Database management for Firebase
 import FirebaseAuth
@@ -35,31 +34,41 @@ class Welcome: UIViewController {
         
         let db = Firestore.firestore()
         
+        var doc: String!
         var cal: String!
+        
+        if Auth.auth().currentUser != nil {
+            doc = Auth.auth().currentUser?.uid
+        } else {
+           doc = "eWzS21mFowbW3PHMqYlW"
+        
+        }
 
-      let ref = db.collection("chapter").document("mt8kgPGsCmVhNtd3L8us")
-       ref.getDocument { (snapshot, err) in
+        let ref = db.collection("chapter").document(doc)
+        
+        ref.getDocument { (snapshot, err) in
            if let data = snapshot?.data() {
-           cal = (data["chapterCalendar"]) as! String
+             cal = (data["chapterCalendar"]) as! String
            } else {
-            print("google.com")
+             cal = ("google.com")
            }
-       }
-        
-        if cal != nil {
-            let url = URL(string: cal!)
-        
-        let request = URLRequest (url: url!)
-        
-            calendar.load(request) }
             
-    /*    } else {
+            if cal != nil {
+                let cale:URL = URL(string: cal.trimmingCharacters(in: .whitespacesAndNewlines))!
+            
+                let request = URLRequest(url: cale)
+            
+                self.calendar.load(request) }
+            
+           /* else {
             let url = URL(string: "https://meg551.wixsite.com/mysite")
             
             let request = URLRequest (url:url!)
             
-            calendar.load(request)
-        } */
+                self.calendar.load(request)
+            }*/
+ 
+         }
         
         
     }
