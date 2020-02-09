@@ -34,17 +34,24 @@ class Welcome: UIViewController {
         
         let db = Firestore.firestore()
         
-        var doc: String!
         var cal: String!
+        var doc: String!
         
-        if Auth.auth().currentUser != nil {
-            doc = Auth.auth().currentUser?.uid
+   /*     if Auth.auth().currentUser != nil {
+        let user = Auth.auth().currentUser
+        doc = user?.uid
         } else {
-           doc = "eWzS21mFowbW3PHMqYlW"
+        doc = "mt8kgPGsCmVhNtd3L8us"
+        } */
         
-        }
 
-        let ref = db.collection("chapter").document(doc)
+        
+        
+        
+        let ref = db.collection("chapter").document("mt8kgPGsCmVhNtd3L8us")
+        
+        
+        
         
         ref.getDocument { (snapshot, err) in
            if let data = snapshot?.data() {
