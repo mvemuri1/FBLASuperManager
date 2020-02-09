@@ -121,9 +121,8 @@ class Register: UIViewController {
                       let db = Firestore.firestore()
                       
                       // creates user
-                      
                     
-                    db.collection("chapter").addDocument(data:[
+                    db.collection("chapter").document(Auth.auth().currentUser!.uid).setData([
                         "chapterCalendar":self.chapterCalendar.text,
                         "chapterWebsite":self.chapterWebsite.text,
                         "eventsForm":self.eventsForm.text,

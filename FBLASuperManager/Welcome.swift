@@ -44,11 +44,11 @@ class Welcome: UIViewController {
         doc = "mt8kgPGsCmVhNtd3L8us"
         } */
         
-
         
         
         
-        let ref = db.collection("chapter").document("mt8kgPGsCmVhNtd3L8us")
+        
+        let ref = db.collection("chapter").document(Auth.auth().currentUser!.uid)
         
         
         
