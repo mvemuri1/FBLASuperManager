@@ -34,49 +34,37 @@ class Welcome: UIViewController {
         
         let db = Firestore.firestore()
         
+        
+        // the String called cal is the link to the calendar.
         var cal: String!
-        var doc: String!
-        
-   /*     if Auth.auth().currentUser != nil {
-        let user = Auth.auth().currentUser
-        doc = user?.uid
-        } else {
-        doc = "mt8kgPGsCmVhNtd3L8us"
-        } */
         
         
         
-        
-        
+        // this pulls the data for the current user from Firestore
         let ref = db.collection("chapter").document(Auth.auth().currentUser!.uid)
         
         
         
-        
+        // the following getDocument call helps to search for the field known as chapterCalendar inside the current user's data
         ref.getDocument { (snapshot, err) in
            if let data = snapshot?.data() {
+            // making sure it is a string for use as a URL later. the string in the "" is the field that will be retrieved.
              cal = (data["chapterCalendar"]) as! String
            } else {
+            // to avoid crashing
              cal = ("google.com")
+            
            }
             
             if cal != nil {
+                // cale is a URL variable. trimmingcharacters was called to make sure the string can be safely used as a URL
                 let cale:URL = URL(string: cal.trimmingCharacters(in: .whitespacesAndNewlines))!
-            
+                // created a URL request
                 let request = URLRequest(url: cale)
-            
+                // the calendar webview will load what was requested
                 self.calendar.load(request) }
-            
-           /* else {
-            let url = URL(string: "https://meg551.wixsite.com/mysite")
-            
-            let request = URLRequest (url:url!)
-            
-                self.calendar.load(request)
-            }*/
  
          }
-        
         
     }
     
