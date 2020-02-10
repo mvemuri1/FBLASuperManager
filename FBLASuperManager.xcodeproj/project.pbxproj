@@ -22,6 +22,9 @@
 		4AA8D5AF23E8F4A70095CA6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */; };
 		4ABDA79923EA74FA0048AC6B /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABDA79823EA74FA0048AC6B /* Welcome.swift */; };
 		6BEA514323EB9D3F00083C50 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA514223EB9D3F00083C50 /* Constants.swift */; };
+		6BEA853323F0D2C300083C50 /* AttendanceAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA853223F0D2C300083C50 /* AttendanceAdmin.swift */; };
+		6BEA853523F0D91C00083C50 /* AttendanceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA853423F0D91C00083C50 /* AttendanceObject.swift */; };
+		6BEA853923F0F70200083C50 /* QandAAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA853823F0F70200083C50 /* QandAAdmin.swift */; };
 		8B109B0B3D32A1AA248EDBA8 /* Pods_FBLASuperManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662930CA5CD69F3DF45DCBDB /* Pods_FBLASuperManager.framework */; };
 		B69941FBE53511D399120B37 /* Pods_FBLASuperManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6798731BE248F6BDE78125C0 /* Pods_FBLASuperManagerUITests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +71,9 @@
 		662930CA5CD69F3DF45DCBDB /* Pods_FBLASuperManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6798731BE248F6BDE78125C0 /* Pods_FBLASuperManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BEA514223EB9D3F00083C50 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6BEA853223F0D2C300083C50 /* AttendanceAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceAdmin.swift; sourceTree = "<group>"; };
+		6BEA853423F0D91C00083C50 /* AttendanceObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceObject.swift; sourceTree = "<group>"; };
+		6BEA853823F0F70200083C50 /* QandAAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QandAAdmin.swift; path = "/Users/annieseth/Documents/FBLASuperManager/FBLASuperManager/Admin Controllers /QandAAdmin.swift"; sourceTree = "<absolute>"; };
 		7DC0DF32AB7E75B6C8FD413E /* Pods-FBLASuperManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLASuperManager.debug.xcconfig"; path = "Target Support Files/Pods-FBLASuperManager/Pods-FBLASuperManager.debug.xcconfig"; sourceTree = "<group>"; };
 		92AD059C1D69E499EC6931D7 /* Pods-FBLASuperManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLASuperManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-FBLASuperManagerUITests/Pods-FBLASuperManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C46138E2EA2D53ED7219570F /* Pods_FBLASuperManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,14 +138,12 @@
 				4AA8D57E23E8F3B00095CA6B /* AppDelegate.swift */,
 				4AA8D58023E8F3B00095CA6B /* SceneDelegate.swift */,
 				4AA8D58223E8F3B00095CA6B /* ViewController.swift */,
-				4A64A93123F0725C00AB07A1 /* AdminAccount.swift */,
-				4A5859E623EC251D00B7E5ED /* Register.swift */,
-				4A3D192323EA5A7400C1B18A /* SignInView.swift */,
-				4ABDA79823EA74FA0048AC6B /* Welcome.swift */,
 				4A64A92F23F0707F00AB07A1 /* Utilities.swift */,
 				6BEA514223EB9D3F00083C50 /* Constants.swift */,
 				4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */,
+				6BEA853123F0D0D500083C50 /* Admin Controllers  */,
 				4AA8D58C23E8F3B20095CA6B /* Info.plist */,
+				6BEA853423F0D91C00083C50 /* AttendanceObject.swift */,
 				4AA8D58423E8F3B00095CA6B /* Main.storyboard */,
 			);
 			path = FBLASuperManager;
@@ -161,6 +165,19 @@
 				4AA8D5A223E8F3B30095CA6B /* Info.plist */,
 			);
 			path = FBLASuperManagerUITests;
+			sourceTree = "<group>";
+		};
+		6BEA853123F0D0D500083C50 /* Admin Controllers  */ = {
+			isa = PBXGroup;
+			children = (
+				4ABDA79823EA74FA0048AC6B /* Welcome.swift */,
+				4A3D192323EA5A7400C1B18A /* SignInView.swift */,
+				4A5859E623EC251D00B7E5ED /* Register.swift */,
+				4A64A93123F0725C00AB07A1 /* AdminAccount.swift */,
+				6BEA853223F0D2C300083C50 /* AttendanceAdmin.swift */,
+				6BEA853823F0F70200083C50 /* QandAAdmin.swift */,
+			);
+			path = "Admin Controllers ";
 			sourceTree = "<group>";
 		};
 		EB8CA5C21DCC96501F0C65B5 /* Frameworks */ = {
@@ -407,6 +424,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BEA853323F0D2C300083C50 /* AttendanceAdmin.swift in Sources */,
+				6BEA853923F0F70200083C50 /* QandAAdmin.swift in Sources */,
+				6BEA853523F0D91C00083C50 /* AttendanceObject.swift in Sources */,
 				4AA8D58323E8F3B00095CA6B /* ViewController.swift in Sources */,
 				4ABDA79923EA74FA0048AC6B /* Welcome.swift in Sources */,
 				4A5859E723EC251D00B7E5ED /* Register.swift in Sources */,

@@ -11,10 +11,13 @@ import FirebaseFirestore
 import Firebase
 
 
+
 class Register: UIViewController {
     //basic function to load view
 // let userDefault = UserDefaults()
+   
     
+    //References to the UI
     @IBOutlet weak var email: UITextField!
     
     @IBOutlet weak var password: UITextField!
@@ -43,6 +46,13 @@ class Register: UIViewController {
 
     @IBOutlet weak var errorLabel: UILabel!
     
+    
+  var questions: [String] = []
+    
+  var answers: [String] = []
+
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,7 +99,7 @@ class Register: UIViewController {
               errorLabel.alpha = 1
           }
     
-
+  
     
     @IBAction func signUpTapped(_ sender: Any) {
           
@@ -132,6 +142,9 @@ class Register: UIViewController {
                         "joinForm":self.joinForm.text,
                         "schoolName":self.schoolName.text,
                         "twitterLink":self.twitterLink.text,
+                        "questions": self.questions,
+                        "answers": self.answers,
+                        
                     "uid":result!.user.uid]) { (error) in
                         if error != nil {
                         // shows error

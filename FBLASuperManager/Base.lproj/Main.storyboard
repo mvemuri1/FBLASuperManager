@@ -368,7 +368,7 @@
         <!--Q & A-->
         <scene sceneID="N4d-SG-y5e">
             <objects>
-                <viewController id="o3d-gg-f4F" sceneMemberID="viewController">
+                <viewController id="o3d-gg-f4F" customClass="QandAAdmin" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uLr-uW-ZRI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -388,13 +388,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Answer " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gei-c7-AUG">
-                                <rect key="frame" x="87" y="383" width="240" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaK-EG-1rf">
                                 <rect key="frame" x="61" y="537" width="292" height="65"/>
                                 <constraints>
@@ -405,27 +398,38 @@
                                 <state key="normal" title="Submit New Q &amp; A">
                                     <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="newQATapped:" destination="o3d-gg-f4F" eventType="touchUpInside" id="1PR-VK-oHe"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yhS-pK-P04">
+                                <rect key="frame" x="87" y="425" width="240" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="yaK-EG-1rf" firstAttribute="top" secondItem="yhS-pK-P04" secondAttribute="bottom" constant="78" id="4ap-yk-90l"/>
                             <constraint firstItem="WeR-SL-la3" firstAttribute="centerY" secondItem="uLr-uW-ZRI" secondAttribute="centerY" id="5IW-DV-2fn"/>
                             <constraint firstItem="L0a-6k-vVB" firstAttribute="trailing" secondItem="WeR-SL-la3" secondAttribute="trailing" id="8Ne-cF-8Cj"/>
                             <constraint firstItem="2oF-3Q-lOT" firstAttribute="bottom" secondItem="yaK-EG-1rf" secondAttribute="bottom" constant="65" id="CSs-m8-yNC"/>
                             <constraint firstItem="WeR-SL-la3" firstAttribute="top" secondItem="L0a-6k-vVB" secondAttribute="bottom" constant="33" id="WQn-7R-FCe"/>
                             <constraint firstItem="L0a-6k-vVB" firstAttribute="top" secondItem="2oF-3Q-lOT" secondAttribute="top" constant="59" id="XL6-Ck-Dq6"/>
                             <constraint firstItem="L0a-6k-vVB" firstAttribute="leading" secondItem="2oF-3Q-lOT" secondAttribute="leading" constant="87" id="XUq-Vs-NRV"/>
-                            <constraint firstItem="WeR-SL-la3" firstAttribute="trailing" secondItem="Gei-c7-AUG" secondAttribute="trailing" id="dH5-rt-SqS"/>
+                            <constraint firstItem="yaK-EG-1rf" firstAttribute="centerX" secondItem="WeR-SL-la3" secondAttribute="centerX" id="e0h-pj-XeY"/>
                             <constraint firstItem="L0a-6k-vVB" firstAttribute="leading" secondItem="WeR-SL-la3" secondAttribute="leading" id="ecF-8D-VOC"/>
-                            <constraint firstItem="Gei-c7-AUG" firstAttribute="centerX" secondItem="yaK-EG-1rf" secondAttribute="centerX" id="gnE-qX-AkG"/>
-                            <constraint firstItem="yaK-EG-1rf" firstAttribute="top" secondItem="Gei-c7-AUG" secondAttribute="bottom" constant="26" id="hDi-Ft-QOL"/>
-                            <constraint firstItem="Gei-c7-AUG" firstAttribute="top" secondItem="WeR-SL-la3" secondAttribute="bottom" constant="8" id="s1x-au-aYx"/>
-                            <constraint firstItem="WeR-SL-la3" firstAttribute="leading" secondItem="Gei-c7-AUG" secondAttribute="leading" id="ubH-yt-mxj"/>
+                            <constraint firstItem="yaK-EG-1rf" firstAttribute="centerX" secondItem="yhS-pK-P04" secondAttribute="centerX" id="ftY-hL-Vij"/>
                             <constraint firstItem="L0a-6k-vVB" firstAttribute="centerX" secondItem="uLr-uW-ZRI" secondAttribute="centerX" id="vZM-Mm-4ov"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2oF-3Q-lOT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Q &amp; A" image="questionmark" catalog="system" id="BTv-3V-9k4"/>
+                    <connections>
+                        <outlet property="a" destination="yhS-pK-P04" id="SpK-10-EDk"/>
+                        <outlet property="list" destination="L0a-6k-vVB" id="Zr5-cK-1gj"/>
+                        <outlet property="q" destination="WeR-SL-la3" id="KTo-ph-PCg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPa-xu-AGG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

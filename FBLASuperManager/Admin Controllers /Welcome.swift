@@ -57,7 +57,7 @@ class Welcome: UIViewController {
            }
             
             if cal != nil {
-                // cale is a URL variable. trimmingcharacters was called to make sure the string can be safely used as a URL
+                // cal is a URL variable. trimmingcharacters was called to make sure the string can be safely used as a URL
                 let cale:URL = URL(string: cal.trimmingCharacters(in: .whitespacesAndNewlines))!
                 // created a URL request
                 let request = URLRequest(url: cale)
@@ -65,6 +65,8 @@ class Welcome: UIViewController {
                 self.calendar.load(request) }
  
          }
+       
+        
         
     }
     
