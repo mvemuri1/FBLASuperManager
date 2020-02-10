@@ -352,18 +352,75 @@
         <!--Officers-->
         <scene sceneID="vPR-jK-peo">
             <objects>
-                <viewController id="892-gg-ySU" sceneMemberID="viewController">
+                <viewController id="892-gg-ySU" customClass="OfficersAdmin" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IkL-ar-ZO5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Officer Bios:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHR-lw-qtU">
+                                <rect key="frame" x="43" y="53" width="328" height="315"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="315" id="req-1F-TUD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oC8-Tv-Kqb">
+                                <rect key="frame" x="30" y="454" width="354" height="193"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Officer Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dwg-g2-5bs">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="dSB-ks-5HT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Biography" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WRn-rT-aIy">
+                                        <rect key="frame" x="0.0" y="64" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvy-nD-cGK">
+                                        <rect key="frame" x="0.0" y="128" width="354" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="oxk-6o-Dbd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
+                                        <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Submit Information">
+                                            <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="newQATapped:" destination="o3d-gg-f4F" eventType="touchUpInside" id="bsi-Iz-bTN"/>
+                                            <action selector="submitInfoTapped:" destination="892-gg-ySU" eventType="touchUpInside" id="Luj-Eh-l4X"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="WHR-lw-qtU" firstAttribute="centerX" secondItem="oC8-Tv-Kqb" secondAttribute="centerX" id="ApU-WK-dmj"/>
+                            <constraint firstItem="oC8-Tv-Kqb" firstAttribute="leading" secondItem="wDM-Tb-jg8" secondAttribute="leading" constant="30" id="Gbj-3T-hsB"/>
+                            <constraint firstItem="wDM-Tb-jg8" firstAttribute="bottom" secondItem="oC8-Tv-Kqb" secondAttribute="bottom" constant="20" id="iMr-WL-Egr"/>
+                            <constraint firstItem="WHR-lw-qtU" firstAttribute="leading" secondItem="wDM-Tb-jg8" secondAttribute="leading" constant="43" id="sHi-tr-ZVf"/>
+                            <constraint firstItem="WHR-lw-qtU" firstAttribute="top" secondItem="wDM-Tb-jg8" secondAttribute="top" constant="53" id="u5P-U6-vHA"/>
+                            <constraint firstAttribute="trailing" secondItem="oC8-Tv-Kqb" secondAttribute="trailing" constant="30" id="uGh-oT-oxg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wDM-Tb-jg8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Officers" image="person" catalog="system" id="NQW-3A-DE6"/>
+                    <connections>
+                        <outlet property="b" destination="WRn-rT-aIy" id="V0S-No-MPc"/>
+                        <outlet property="n" destination="Dwg-g2-5bs" id="ozY-Ut-79I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPE-8D-CBl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3712" y="835"/>
+            <point key="canvasLocation" x="3711.594202898551" y="834.78260869565224"/>
         </scene>
         <!--Q & A-->
         <scene sceneID="N4d-SG-y5e">

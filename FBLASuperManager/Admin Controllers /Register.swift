@@ -47,11 +47,10 @@ class Register: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     
     
-  var questions: [String] = []
-    
-  var answers: [String] = []
-
-    
+    var questions: [String] = []
+    var answers: [String] = []
+    var name: [String] = []
+    var bio: [String] = []
 
     
     override func viewDidLoad() {
@@ -144,6 +143,8 @@ class Register: UIViewController {
                         "twitterLink":self.twitterLink.text,
                         "questions": self.questions,
                         "answers": self.answers,
+                        "name": self.name,
+                        "bio": self.bio,
                         
                     "uid":result!.user.uid]) { (error) in
                         if error != nil {
