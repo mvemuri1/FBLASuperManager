@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import FirebaseFirestore
 
 
 class ChooseSchool: UIViewController {
@@ -22,14 +23,21 @@ override func viewDidLoad() {
 }
 
     @IBAction func nextTapped(_ sender: Any) {
-        let school1 = school.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let email = school.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+        let db = Firestore.firestore()
+         
         
         
         
         
         
+        }
     }
-}
-
+        
+        
+        
+        
+        
 
 

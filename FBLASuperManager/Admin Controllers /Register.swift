@@ -104,6 +104,7 @@ class Register: UIViewController {
           
           // validate the fields
          let error = validateFields()
+        let db = Firestore.firestore()
           
           if error != nil {
               
@@ -127,12 +128,12 @@ class Register: UIViewController {
                   else {
                       
                       // User was created successfully, now store the first name and last name
-                      let db = Firestore.firestore()
+                      
                       
                       // creates user
                     
+                    
                     db.collection("chapter").document(Auth.auth().currentUser!.uid).setData([
-                        "email":self.email.text, "password":self.password.text,
                         "chapterCalendar":self.chapterCalendar.text,
                         "chapterWebsite":self.chapterWebsite.text,
                         "eventsForm":self.eventsForm.text,
@@ -154,7 +155,12 @@ class Register: UIViewController {
                         }
                     }
                       
-                }}
+                }
+                let ref = db.collection("UID").document("useruid")
+                
+                ref.updateData(["uid": FieldValue.arrayUnion([result!.user.uid])])
+                
+            }
                       
    //           self.transitionToWelcome()
                 

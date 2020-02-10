@@ -14,10 +14,102 @@
             filePath = "FBLASuperManager/ChooseSchool.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "ChooseSchool"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "4D7A134F-5909-495A-BCFE-DD3AB2FEC65B - 438daab7cef4f758"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FBLASuperManager.ChooseSchool.school.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "FBLASuperManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/meghavemuri/Documents/FBLASuperManager/FBLASuperManager/ChooseSchool.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "4D7A134F-5909-495A-BCFE-DD3AB2FEC65B - 8d73342b0db7a36c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FBLASuperManager.ChooseSchool.school.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "FBLASuperManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/meghavemuri/Documents/FBLASuperManager/FBLASuperManager/ChooseSchool.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "4D7A134F-5909-495A-BCFE-DD3AB2FEC65B - 9846a6eaa2a38a5f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FBLASuperManager.ChooseSchool.school.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "FBLASuperManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/meghavemuri/Documents/FBLASuperManager/FBLASuperManager/ChooseSchool.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "4D7A134F-5909-495A-BCFE-DD3AB2FEC65B - 8ccb633e72d6e2f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FBLASuperManager.ChooseSchool.school.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "FBLASuperManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/meghavemuri/Documents/FBLASuperManager/FBLASuperManager/ChooseSchool.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "4D7A134F-5909-495A-BCFE-DD3AB2FEC65B - 718e2d26cc728d25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FBLASuperManager.ChooseSchool.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; FBLASuperManager.ChooseSchool"
+                  moduleName = "FBLASuperManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/meghavemuri/Documents/FBLASuperManager/FBLASuperManager/ChooseSchool.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "4D7A134F-5909-495A-BCFE-DD3AB2FEC65B - aeab48329a41ab61"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FBLASuperManager.ChooseSchool.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;FBLASuperManager.ChooseSchool&gt;"
+                  moduleName = "FBLASuperManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/meghavemuri/Documents/FBLASuperManager/FBLASuperManager/ChooseSchool.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
