@@ -179,7 +179,7 @@
                                             <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <action selector="presentTapped:" destination="uEP-M7-B1M" eventType="touchUpInside" id="vjZ-BO-knk"/>
+                                            <action selector="presentTapped:" destination="uEP-M7-B1M" eventType="touchUpInside" id="1jt-6B-Jrk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHi-Se-Qsv">
@@ -205,8 +205,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Attendance" image="checkmark.circle" catalog="system" id="okC-a4-uER"/>
                     <connections>
-                        <outlet property="attendee" destination="nB5-fW-kMe" id="Dbj-aC-TGw"/>
-                        <outlet property="dateChosen" destination="lTr-eY-H0K" id="qO3-Sc-WW3"/>
+                        <outlet property="attendee" destination="nB5-fW-kMe" id="svg-zI-ANW"/>
+                        <outlet property="dateChosen" destination="lTr-eY-H0K" id="EUu-Gd-dqZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t8w-V0-QJK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

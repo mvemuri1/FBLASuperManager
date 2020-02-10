@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var admin: UIButton!
     
     @IBOutlet weak var student: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()

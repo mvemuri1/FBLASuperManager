@@ -21,7 +21,7 @@ class AttendanceAdmin: UIViewController {
     
     
     
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -29,7 +29,7 @@ class AttendanceAdmin: UIViewController {
     
     
     //Action of saving the attendance
-    @IBAction func presentTapped(_ sender: Any) {
+   @IBAction func presentTapped(_ sender: Any) {
         
         let formatter = DateFormatter()
         
