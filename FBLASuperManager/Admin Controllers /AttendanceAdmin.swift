@@ -8,14 +8,33 @@
 
 import UIKit
 
-class Attendance: UIViewController {
+class AttendanceAdmin: UIViewController {
 
-    //Instantiate an array for each date 
+    //Creates reference for UI
+    
+    @IBOutlet weak var dateChosen: UIDatePicker!
+    
+    @IBOutlet weak var attendee: UITextField!
+    
+    //Instantiate an array for each date
+    public var dates: [String] = []
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
     }
-          
+    
+    
+    //Action of saving the attendance
+    @IBAction func presentTapped(_ sender: Any) {
+        
+        let formatter = DateFormatter()
+        
+        dates.append(formatter.string(from: dateChosen.date))
+    }
+    
    
 }

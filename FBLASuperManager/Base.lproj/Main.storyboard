@@ -149,7 +149,7 @@
         <!--Attendance-->
         <scene sceneID="z85-OR-bj5">
             <objects>
-                <viewController id="uEP-M7-B1M" sceneMemberID="viewController">
+                <viewController id="uEP-M7-B1M" customClass="AttendanceAdmin" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ESZ-aq-2hm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,12 +178,15 @@
                                         <state key="normal" title="Mark Present">
                                             <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="presentTapped:" destination="uEP-M7-B1M" eventType="touchUpInside" id="vjZ-BO-knk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHi-Se-Qsv">
                                         <rect key="frame" x="0.0" y="432.66666666666669" width="320" height="36"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                         <color key="tintColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="View Meeting Attendance">
+                                        <state key="normal" title="View Past Meeting Attendance">
                                             <color key="titleColor" red="0.098469647019999995" green="0.23331723900000001" blue="0.47508500650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
@@ -201,6 +204,10 @@
                         <viewLayoutGuide key="safeArea" id="Cxb-WS-hU3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Attendance" image="checkmark.circle" catalog="system" id="okC-a4-uER"/>
+                    <connections>
+                        <outlet property="attendee" destination="nB5-fW-kMe" id="Dbj-aC-TGw"/>
+                        <outlet property="dateChosen" destination="lTr-eY-H0K" id="qO3-Sc-WW3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t8w-V0-QJK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
