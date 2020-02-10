@@ -11,6 +11,12 @@
 		4A3D192423EA5A7400C1B18A /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D192323EA5A7400C1B18A /* SignInView.swift */; };
 		4A5859E723EC251D00B7E5ED /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5859E623EC251D00B7E5ED /* Register.swift */; };
 		4A64A93023F0707F00AB07A1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64A92F23F0707F00AB07A1 /* Utilities.swift */; };
+		4A64A93623F202CC00AB07A1 /* ChooseSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64A93523F202CC00AB07A1 /* ChooseSchool.swift */; };
+		4A64A93E23F2090F00AB07A1 /* FBLASuperManagerTests1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64A93D23F2090F00AB07A1 /* FBLASuperManagerTests1.swift */; };
+		4A64A94623F209F500AB07A1 /* OfficersAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64A94523F209F500AB07A1 /* OfficersAdmin.swift */; };
+		4A64A95923F20A4700AB07A1 /* QAObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64A95823F20A4600AB07A1 /* QAObject.swift */; };
+		4A64A95B23F20A5C00AB07A1 /* QandAAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64A95A23F20A5C00AB07A1 /* QandAAdmin.swift */; };
+		4A64A95D23F20A7400AB07A1 /* AdminAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64A95C23F20A7400AB07A1 /* AdminAccount.swift */; };
 		4AA8D57F23E8F3B00095CA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D57E23E8F3B00095CA6B /* AppDelegate.swift */; };
 		4AA8D58123E8F3B00095CA6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D58023E8F3B00095CA6B /* SceneDelegate.swift */; };
 		4AA8D58323E8F3B00095CA6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D58223E8F3B00095CA6B /* ViewController.swift */; };
@@ -20,16 +26,20 @@
 		4AA8D5A123E8F3B20095CA6B /* FBLASuperManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D5A023E8F3B20095CA6B /* FBLASuperManagerUITests.swift */; };
 		4AA8D5AF23E8F4A70095CA6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */; };
 		4ABDA79923EA74FA0048AC6B /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABDA79823EA74FA0048AC6B /* Welcome.swift */; };
-		6B768B1123F1EF9D00F2F88D /* AdminAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B768B1023F1EF9D00F2F88D /* AdminAccount.swift */; };
 		6BEA514323EB9D3F00083C50 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA514223EB9D3F00083C50 /* Constants.swift */; };
 		6BEA853323F0D2C300083C50 /* AttendanceAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA853223F0D2C300083C50 /* AttendanceAdmin.swift */; };
-		6BEA853923F0F70200083C50 /* QandAAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA853823F0F70200083C50 /* QandAAdmin.swift */; };
-		6BEA853B23F10E0D00083C50 /* OfficersAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA853A23F10E0D00083C50 /* OfficersAdmin.swift */; };
 		8B109B0B3D32A1AA248EDBA8 /* Pods_FBLASuperManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662930CA5CD69F3DF45DCBDB /* Pods_FBLASuperManager.framework */; };
 		B69941FBE53511D399120B37 /* Pods_FBLASuperManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6798731BE248F6BDE78125C0 /* Pods_FBLASuperManagerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4A64A94023F2090F00AB07A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AA8D57323E8F3B00095CA6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AA8D57A23E8F3B00095CA6B;
+			remoteInfo = FBLASuperManager;
+		};
 		4AA8D59223E8F3B20095CA6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4AA8D57323E8F3B00095CA6B /* Project object */;
@@ -52,6 +62,14 @@
 		4A3D192323EA5A7400C1B18A /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		4A5859E623EC251D00B7E5ED /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		4A64A92F23F0707F00AB07A1 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		4A64A93523F202CC00AB07A1 /* ChooseSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSchool.swift; sourceTree = "<group>"; };
+		4A64A93B23F2090F00AB07A1 /* FBLASuperManagerTests1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBLASuperManagerTests1.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A64A93D23F2090F00AB07A1 /* FBLASuperManagerTests1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLASuperManagerTests1.swift; sourceTree = "<group>"; };
+		4A64A93F23F2090F00AB07A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A64A94523F209F500AB07A1 /* OfficersAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OfficersAdmin.swift; path = "/Users/meghavemuri/Documents/FBLASuperManager/FBLASuperManager/Admin Controllers /OfficersAdmin.swift"; sourceTree = "<absolute>"; };
+		4A64A95823F20A4600AB07A1 /* QAObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QAObject.swift; sourceTree = "<group>"; };
+		4A64A95A23F20A5C00AB07A1 /* QandAAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QandAAdmin.swift; sourceTree = "<group>"; };
+		4A64A95C23F20A7400AB07A1 /* AdminAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdminAccount.swift; path = "/Users/meghavemuri/Documents/FBLASuperManager/FBLASuperManager/Admin Controllers /AdminAccount.swift"; sourceTree = "<absolute>"; };
 		4AA8D57B23E8F3B00095CA6B /* FBLASuperManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBLASuperManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA8D57E23E8F3B00095CA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AA8D58023E8F3B00095CA6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,11 +87,8 @@
 		4ABDA79823EA74FA0048AC6B /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		662930CA5CD69F3DF45DCBDB /* Pods_FBLASuperManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6798731BE248F6BDE78125C0 /* Pods_FBLASuperManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B768B1023F1EF9D00F2F88D /* AdminAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdminAccount.swift; path = "/Users/annieseth/Documents/FBLASuperManager/FBLASuperManager/Admin Controllers /AdminAccount.swift"; sourceTree = "<absolute>"; };
 		6BEA514223EB9D3F00083C50 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6BEA853223F0D2C300083C50 /* AttendanceAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceAdmin.swift; sourceTree = "<group>"; };
-		6BEA853823F0F70200083C50 /* QandAAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QandAAdmin.swift; path = "/Users/annieseth/Documents/FBLASuperManager/FBLASuperManager/Admin Controllers /QandAAdmin.swift"; sourceTree = "<absolute>"; };
-		6BEA853A23F10E0D00083C50 /* OfficersAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OfficersAdmin.swift; path = "/Users/annieseth/Documents/FBLASuperManager/FBLASuperManager/Admin Controllers /OfficersAdmin.swift"; sourceTree = "<absolute>"; };
 		7DC0DF32AB7E75B6C8FD413E /* Pods-FBLASuperManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLASuperManager.debug.xcconfig"; path = "Target Support Files/Pods-FBLASuperManager/Pods-FBLASuperManager.debug.xcconfig"; sourceTree = "<group>"; };
 		92AD059C1D69E499EC6931D7 /* Pods-FBLASuperManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLASuperManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-FBLASuperManagerUITests/Pods-FBLASuperManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C46138E2EA2D53ED7219570F /* Pods_FBLASuperManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +97,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4A64A93823F2090F00AB07A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AA8D57823E8F3B00095CA6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,12 +131,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A64A93C23F2090F00AB07A1 /* FBLASuperManagerTests1 */ = {
+			isa = PBXGroup;
+			children = (
+				4A64A93D23F2090F00AB07A1 /* FBLASuperManagerTests1.swift */,
+				4A64A93F23F2090F00AB07A1 /* Info.plist */,
+			);
+			path = FBLASuperManagerTests1;
+			sourceTree = "<group>";
+		};
 		4AA8D57223E8F3B00095CA6B = {
 			isa = PBXGroup;
 			children = (
 				4AA8D57D23E8F3B00095CA6B /* FBLASuperManager */,
 				4AA8D59423E8F3B20095CA6B /* FBLASuperManagerTests */,
 				4AA8D59F23E8F3B20095CA6B /* FBLASuperManagerUITests */,
+				4A64A93C23F2090F00AB07A1 /* FBLASuperManagerTests1 */,
 				4AA8D57C23E8F3B00095CA6B /* Products */,
 				F5C318C8AFB7193F18204C29 /* Pods */,
 				EB8CA5C21DCC96501F0C65B5 /* Frameworks */,
@@ -127,6 +159,7 @@
 				4AA8D57B23E8F3B00095CA6B /* FBLASuperManager.app */,
 				4AA8D59123E8F3B20095CA6B /* FBLASuperManagerTests.xctest */,
 				4AA8D59C23E8F3B20095CA6B /* FBLASuperManagerUITests.xctest */,
+				4A64A93B23F2090F00AB07A1 /* FBLASuperManagerTests1.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +172,7 @@
 				4AA8D58023E8F3B00095CA6B /* SceneDelegate.swift */,
 				4AA8D58223E8F3B00095CA6B /* ViewController.swift */,
 				4A64A92F23F0707F00AB07A1 /* Utilities.swift */,
+				4A64A93523F202CC00AB07A1 /* ChooseSchool.swift */,
 				6BEA514223EB9D3F00083C50 /* Constants.swift */,
 				4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */,
 				6BEA853123F0D0D500083C50 /* Admin Controllers  */,
@@ -170,12 +204,13 @@
 			isa = PBXGroup;
 			children = (
 				4ABDA79823EA74FA0048AC6B /* Welcome.swift */,
+				4A64A95C23F20A7400AB07A1 /* AdminAccount.swift */,
 				4A3D192323EA5A7400C1B18A /* SignInView.swift */,
+				4A64A95A23F20A5C00AB07A1 /* QandAAdmin.swift */,
 				4A5859E623EC251D00B7E5ED /* Register.swift */,
+				4A64A94523F209F500AB07A1 /* OfficersAdmin.swift */,
 				6BEA853223F0D2C300083C50 /* AttendanceAdmin.swift */,
-				6BEA853823F0F70200083C50 /* QandAAdmin.swift */,
-				6BEA853A23F10E0D00083C50 /* OfficersAdmin.swift */,
-				6B768B1023F1EF9D00F2F88D /* AdminAccount.swift */,
+				4A64A95823F20A4600AB07A1 /* QAObject.swift */,
 			);
 			path = "Admin Controllers ";
 			sourceTree = "<group>";
@@ -206,6 +241,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4A64A93A23F2090F00AB07A1 /* FBLASuperManagerTests1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A64A94423F2090F00AB07A1 /* Build configuration list for PBXNativeTarget "FBLASuperManagerTests1" */;
+			buildPhases = (
+				4A64A93723F2090F00AB07A1 /* Sources */,
+				4A64A93823F2090F00AB07A1 /* Frameworks */,
+				4A64A93923F2090F00AB07A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A64A94123F2090F00AB07A1 /* PBXTargetDependency */,
+			);
+			name = FBLASuperManagerTests1;
+			productName = FBLASuperManagerTests1;
+			productReference = 4A64A93B23F2090F00AB07A1 /* FBLASuperManagerTests1.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4AA8D57A23E8F3B00095CA6B /* FBLASuperManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AA8D5A523E8F3B30095CA6B /* Build configuration list for PBXNativeTarget "FBLASuperManager" */;
@@ -273,6 +326,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Megha Vemuri";
 				TargetAttributes = {
+					4A64A93A23F2090F00AB07A1 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 4AA8D57A23E8F3B00095CA6B;
+					};
 					4AA8D57A23E8F3B00095CA6B = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -302,11 +359,19 @@
 				4AA8D57A23E8F3B00095CA6B /* FBLASuperManager */,
 				4AA8D59023E8F3B20095CA6B /* FBLASuperManagerTests */,
 				4AA8D59B23E8F3B20095CA6B /* FBLASuperManagerUITests */,
+				4A64A93A23F2090F00AB07A1 /* FBLASuperManagerTests1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4A64A93923F2090F00AB07A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AA8D57923E8F3B00095CA6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,20 +485,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4A64A93723F2090F00AB07A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A64A93E23F2090F00AB07A1 /* FBLASuperManagerTests1.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AA8D57723E8F3B00095CA6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6BEA853323F0D2C300083C50 /* AttendanceAdmin.swift in Sources */,
-				6BEA853923F0F70200083C50 /* QandAAdmin.swift in Sources */,
 				4AA8D58323E8F3B00095CA6B /* ViewController.swift in Sources */,
-				6BEA853B23F10E0D00083C50 /* OfficersAdmin.swift in Sources */,
 				4ABDA79923EA74FA0048AC6B /* Welcome.swift in Sources */,
+				4A64A94623F209F500AB07A1 /* OfficersAdmin.swift in Sources */,
 				4A5859E723EC251D00B7E5ED /* Register.swift in Sources */,
+				4A64A95D23F20A7400AB07A1 /* AdminAccount.swift in Sources */,
 				4AA8D57F23E8F3B00095CA6B /* AppDelegate.swift in Sources */,
-				6B768B1123F1EF9D00F2F88D /* AdminAccount.swift in Sources */,
+				4A64A95B23F20A5C00AB07A1 /* QandAAdmin.swift in Sources */,
 				6BEA514323EB9D3F00083C50 /* Constants.swift in Sources */,
+				4A64A95923F20A4700AB07A1 /* QAObject.swift in Sources */,
 				4A3D192423EA5A7400C1B18A /* SignInView.swift in Sources */,
+				4A64A93623F202CC00AB07A1 /* ChooseSchool.swift in Sources */,
 				4A64A93023F0707F00AB07A1 /* Utilities.swift in Sources */,
 				4AA8D58123E8F3B00095CA6B /* SceneDelegate.swift in Sources */,
 			);
@@ -458,6 +533,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4A64A94123F2090F00AB07A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AA8D57A23E8F3B00095CA6B /* FBLASuperManager */;
+			targetProxy = 4A64A94023F2090F00AB07A1 /* PBXContainerItemProxy */;
+		};
 		4AA8D59323E8F3B20095CA6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4AA8D57A23E8F3B00095CA6B /* FBLASuperManager */;
@@ -482,6 +562,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4A64A94223F2090F00AB07A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FBLASuperManagerTests1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mVemuri.FBLASuperManagerTests1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBLASuperManager.app/FBLASuperManager";
+			};
+			name = Debug;
+		};
+		4A64A94323F2090F00AB07A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FBLASuperManagerTests1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mVemuri.FBLASuperManagerTests1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBLASuperManager.app/FBLASuperManager";
+			};
+			name = Release;
+		};
 		4AA8D5A323E8F3B30095CA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -731,6 +849,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4A64A94423F2090F00AB07A1 /* Build configuration list for PBXNativeTarget "FBLASuperManagerTests1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A64A94223F2090F00AB07A1 /* Debug */,
+				4A64A94323F2090F00AB07A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4AA8D57623E8F3B00095CA6B /* Build configuration list for PBXProject "FBLASuperManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

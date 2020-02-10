@@ -132,6 +132,7 @@ class Register: UIViewController {
                       // creates user
                     
                     db.collection("chapter").document(Auth.auth().currentUser!.uid).setData([
+                        "email":self.email.text, "password":self.password.text,
                         "chapterCalendar":self.chapterCalendar.text,
                         "chapterWebsite":self.chapterWebsite.text,
                         "eventsForm":self.eventsForm.text,

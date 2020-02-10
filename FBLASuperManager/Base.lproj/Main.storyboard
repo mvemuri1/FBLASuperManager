@@ -50,23 +50,14 @@
             </objects>
             <point key="canvasLocation" x="98.550724637681171" y="101.90217391304348"/>
         </scene>
-        <!--View Controller-->
+        <!--Choose School-->
         <scene sceneID="wdR-cU-jD5">
             <objects>
-                <viewController id="v0Z-Si-vgV" sceneMemberID="viewController">
+                <viewController id="v0Z-Si-vgV" customClass="ChooseSchool" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LQ5-m1-Don">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNR-dI-gR8">
-                                <rect key="frame" x="0.0" y="279" width="414" height="216"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please Choose Your Chapter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIr-QT-Jdb">
-                                <rect key="frame" x="98" y="212" width="219" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFf-dF-dIK">
                                 <rect key="frame" x="100" y="481" width="217" height="65"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="45"/>
@@ -78,25 +69,37 @@
                                     <segue destination="3bE-Bp-17F" kind="presentation" id="tH4-0H-SxM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please enter the name of your school. Ex. Alpharetta High School" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="ube-ed-ncd">
+                                <rect key="frame" x="46" y="56" width="325" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="Zt2-4c-P4e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="School Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="35s-9e-wAU">
+                                <rect key="frame" x="61" y="262" width="295" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pNR-dI-gR8" firstAttribute="top" secondItem="bIr-QT-Jdb" secondAttribute="bottom" constant="46" id="955-ME-cQa"/>
-                            <constraint firstItem="bIr-QT-Jdb" firstAttribute="leading" secondItem="UVE-lZ-6i4" secondAttribute="leading" constant="98" id="L4M-98-oFj"/>
-                            <constraint firstItem="bIr-QT-Jdb" firstAttribute="top" secondItem="UVE-lZ-6i4" secondAttribute="top" constant="212" id="Ocv-ew-vJC"/>
-                            <constraint firstItem="pNR-dI-gR8" firstAttribute="leading" secondItem="UVE-lZ-6i4" secondAttribute="leading" id="VUk-yF-6xW"/>
-                            <constraint firstItem="bIr-QT-Jdb" firstAttribute="centerX" secondItem="pNR-dI-gR8" secondAttribute="centerX" id="We0-pU-K9d"/>
                             <constraint firstItem="sFf-dF-dIK" firstAttribute="leading" secondItem="UVE-lZ-6i4" secondAttribute="leading" constant="100" id="fmX-mX-AL9"/>
-                            <constraint firstItem="bIr-QT-Jdb" firstAttribute="centerX" secondItem="LQ5-m1-Don" secondAttribute="centerX" id="ghf-OC-1Yy"/>
-                            <constraint firstItem="bIr-QT-Jdb" firstAttribute="trailing" secondItem="sFf-dF-dIK" secondAttribute="trailing" id="nff-Km-6wp"/>
                             <constraint firstItem="UVE-lZ-6i4" firstAttribute="bottom" secondItem="sFf-dF-dIK" secondAttribute="bottom" constant="170" id="pYo-Ed-Scr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UVE-lZ-6i4"/>
                     </view>
+                    <connections>
+                        <outlet property="school" destination="35s-9e-wAU" id="iGY-Qh-qBl"/>
+                        <outlet property="signInButton" destination="sFf-dF-dIK" id="Tqw-Gi-0lg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y3e-Jf-QvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="574"/>
+            <point key="canvasLocation" x="942.02898550724649" y="573.91304347826087"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gcF-Da-EVJ">
@@ -834,8 +837,8 @@
         <image name="rosette" catalog="system" width="50" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="otf-wX-f9K"/>
-        <segue reference="EOH-hn-G7P"/>
-        <segue reference="bd6-tO-PEi"/>
+        <segue reference="PVF-uX-GkL"/>
+        <segue reference="XGN-JK-cxZ"/>
+        <segue reference="jPh-5T-Jvl"/>
     </inferredMetricsTieBreakers>
 </document>
