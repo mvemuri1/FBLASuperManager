@@ -7,7 +7,7 @@
 Annie Seth & Megha Vemuri
 
 ### Description
-FBLA Super Manager is a revolutionary way to manage a local Future Business Leader of America chapter with a few taps on a mobile phone. Advisors, officers, and students alike can utilize FBLA Super Manager to help them all stay connected. From competitive events to Social Media, this mobile application can help your chapter thrive.
+FBLA Super Manager is a revolutionary way to manage a local Future Business Leader of America chapter with a few taps on a mobile phone. Advisors, officers, and students alike can utilize FBLA Super Manager to help them all stay connected. With a minimalistic design that can be applicable to any chapter that registers, the iOS application presents itself in a modern yet functional way. From competitive events to Social Media, this mobile application can help your chapter thrive. 
 
 ### Instructions for Download
 1. In order to open FBLA Super Manager, one will need Xcode on their personal computer device. After getting this application, download all files by selecting the green download button in Github.
