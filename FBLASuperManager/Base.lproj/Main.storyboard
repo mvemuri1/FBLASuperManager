@@ -262,13 +262,14 @@
         <!--Calendar-->
         <scene sceneID="rlr-In-GdX">
             <objects>
-                <viewController id="NSx-T0-JE7" sceneMemberID="viewController">
+                <viewController id="NSx-T0-JE7" customClass="CalendarStudent" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jvd-LO-lWs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAR-bV-MlK">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KkJ-x7-jhf">
+                                <rect key="frame" x="20" y="20" width="374" height="630"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -277,19 +278,16 @@
                             </wkWebView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="7ab-nl-XOq" firstAttribute="bottom" secondItem="jAR-bV-MlK" secondAttribute="bottom" id="Esl-to-Y8L"/>
-                            <constraint firstItem="7ab-nl-XOq" firstAttribute="trailing" secondItem="jAR-bV-MlK" secondAttribute="trailing" id="SsR-3c-e3D"/>
-                            <constraint firstItem="jAR-bV-MlK" firstAttribute="top" secondItem="7ab-nl-XOq" secondAttribute="top" id="TU0-GX-SIG"/>
-                            <constraint firstItem="jAR-bV-MlK" firstAttribute="leading" secondItem="7ab-nl-XOq" secondAttribute="leading" id="Xdp-0j-PGZ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7ab-nl-XOq"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="YMf-QT-khh"/>
+                    <connections>
+                        <outlet property="calendarS" destination="KkJ-x7-jhf" id="38U-EL-F2j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0F-sK-2BQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2097" y="1847"/>
+            <point key="canvasLocation" x="2095.6521739130435" y="1846.467391304348"/>
         </scene>
         <!--Q & A-->
         <scene sceneID="9wI-e3-Eve">
@@ -314,6 +312,41 @@
                     <view key="view" contentMode="scaleToFill" id="0Rn-jg-dst">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxQ-OU-4hq">
+                                <rect key="frame" x="120" y="278" width="175" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
+                                <state key="normal" title="Event Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fDz-Il-Jgc" kind="presentation" id="6Jl-9l-dp9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4A-MU-rwD">
+                                <rect key="frame" x="52" y="197" width="312" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
+                                <state key="normal" title="Information on all events">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="w27-7h-8ng" kind="presentation" id="IxA-EA-DhI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nw5-fb-JuT">
+                                <rect key="frame" x="120" y="355" width="175" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
+                                <state key="normal" title="Event Sheet">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="E5b-2T-FPs" kind="presentation" id="3AA-Qd-Xc1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="dPc-k5-r7q"/>
                     </view>
@@ -321,7 +354,94 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eZ6-lF-BK8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2093" y="2599"/>
+            <point key="canvasLocation" x="2092.753623188406" y="2598.913043478261"/>
+        </scene>
+        <!--Event Sheet Student-->
+        <scene sceneID="9Rb-r9-yfi">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8CB-NA-JIh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="E5b-2T-FPs" customClass="EventSheetStudent" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eyH-HO-8eO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vl3-HH-XYh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wMf-ex-AJ7"/>
+                    </view>
+                    <connections>
+                        <outlet property="eventt" destination="Vl3-HH-XYh" id="RMb-Ml-292"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2853.6231884057975" y="3025.271739130435"/>
+        </scene>
+        <!--Event Sign Up-->
+        <scene sceneID="491-wy-jXx">
+            <objects>
+                <viewController id="fDz-Il-Jgc" customClass="EventSignUp" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ipA-cN-Fab">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sJb-WY-Afk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bDa-Eg-3qc"/>
+                    </view>
+                    <connections>
+                        <outlet property="eventt" destination="sJb-WY-Afk" id="s2Y-cQ-f6E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uld-Mb-Xpk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3640.579710144928" y="2598.913043478261"/>
+        </scene>
+        <!--Events Student-->
+        <scene sceneID="aqU-Po-nv4">
+            <objects>
+                <viewController id="w27-7h-8ng" customClass="EventsStudent" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Gj-xr-kZd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0w6-1h-9uE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fT6-qS-KeF"/>
+                    </view>
+                    <connections>
+                        <outlet property="eventt" destination="0w6-1h-9uE" id="2lp-E9-Trw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IGN-Hk-42F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2855.072463768116" y="2243.4782608695655"/>
         </scene>
         <!--Home-->
         <scene sceneID="DWH-wX-MAg">
@@ -505,18 +625,32 @@
         <!--Events-->
         <scene sceneID="G8l-ha-jUY">
             <objects>
-                <viewController id="BHF-vg-FB1" sceneMemberID="viewController">
+                <viewController id="BHF-vg-FB1" customClass="Events" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QtC-Mp-6cr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gyx-mo-LQx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.62745098039215685" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="25C-Ff-6BH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Events" image="rosette" catalog="system" id="hS2-ou-pBf"/>
+                    <connections>
+                        <outlet property="eventt" destination="Gyx-mo-LQx" id="FMp-Oh-1Ek"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yqk-e1-7Z4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3712" y="-831"/>
+            <point key="canvasLocation" x="3711.594202898551" y="-831.52173913043487"/>
         </scene>
         <!--Home-->
         <scene sceneID="XHW-KU-p75">
@@ -839,6 +973,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="PVF-uX-GkL"/>
         <segue reference="XGN-JK-cxZ"/>
-        <segue reference="jPh-5T-Jvl"/>
+        <segue reference="bd6-tO-PEi"/>
     </inferredMetricsTieBreakers>
 </document>
