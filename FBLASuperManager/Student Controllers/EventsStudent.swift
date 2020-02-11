@@ -20,21 +20,16 @@ class EventsStudent: UIViewController {
 
     //basic function to load view
     
-  //  let userDefault = UserDefaults.standard
-    
- /*   let db = Firestore.firestore()
-    
-      db.collection("chapter").addDocument(data: ["email":self.email, "password":self.password, "chapterCalendar":self.chapterCalendar, "chapterWebsite":self.chapterWebsite, "eventsForm":self.eventsForm, "eventsSheet":self.eventsSheet, "facebookLink":self.facebookLink, "instagramLink":self.instagramLink, "joinForm":self.joinForm, "schoolName":self.schoolName, "twitterLink":self.twitterLink, "uid":result!.user.uid])
- */
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        // leads user to the official fbla website for competitive events
         let cale:URL = URL(string: "https://www.fbla-pbl.org/fbla/competitive-events/")!
                 // created a URL request
                 let request = URLRequest(url: cale)
-                // the calendar webview will load what was requested
+                // the event webview will load what was requested
                 self.eventt.load(request)
  
          }

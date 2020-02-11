@@ -38,7 +38,7 @@ class EventSheetStudent: UIViewController {
         
         
         
-        // the following getDocument call helps to search for the field known as chapterCalendar inside the current user's data
+        // the following getDocument call helps to search for the field known as eventsSheet inside the current user's data
         ref.getDocument { (snapshot, err) in
            if let data = snapshot?.data() {
             // making sure it is a string for use as a URL later. the string in the "" is the field that will be retrieved.
@@ -54,7 +54,7 @@ class EventSheetStudent: UIViewController {
                 let cale:URL = URL(string: events.trimmingCharacters(in: .whitespacesAndNewlines))!
                 // created a URL request
                 let request = URLRequest(url: cale)
-                // the calendar webview will load what was requested
+                // the event webview will load what was requested
                 self.eventt.load(request) }
  
          }

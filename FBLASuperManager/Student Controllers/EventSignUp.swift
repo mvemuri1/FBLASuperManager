@@ -24,11 +24,6 @@ class EventSignUp: UIViewController {
     
   //  let userDefault = UserDefaults.standard
     
- /*   let db = Firestore.firestore()
-    
-      db.collection("chapter").addDocument(data: ["email":self.email, "password":self.password, "chapterCalendar":self.chapterCalendar, "chapterWebsite":self.chapterWebsite, "eventsForm":self.eventsForm, "eventsSheet":self.eventsSheet, "facebookLink":self.facebookLink, "instagramLink":self.instagramLink, "joinForm":self.joinForm, "schoolName":self.schoolName, "twitterLink":self.twitterLink, "uid":result!.user.uid])
- */
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

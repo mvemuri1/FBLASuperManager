@@ -42,7 +42,7 @@ class Instagram: UIViewController {
         ref.getDocument { (snapshot, err) in
            if let data = snapshot?.data() {
             // making sure it is a string for use as a URL later. the string in the "" is the field that will be retrieved.
-             cal = (data["joinForm"]) as! String
+             cal = (data["instagramLink"]) as! String
            } else {
             // to avoid crashing
              cal = ("google.com")

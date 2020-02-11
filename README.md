@@ -34,14 +34,14 @@ After giving that information, select the sign up button.
 3. At the bottom, there is a tab bar that allows you to select what feature you would like to explore. 
 
 ### Instructions for Use (Student)
-1. Select the student option and choose which (registered) chapter that you are a part of.
+1. Select the student option and choose which (registered) chapter that you are a part of. If you are using this for testing purposes, enter "Alpharetta High School" without the quotation marks.
 2. You may now choose from the tab bar that allows you to view Home, Calendar, Events, and Q&A, where you may contact your chapter leaders. 
 
 
 
 ### Admin Features 
 * **Home**
-* The home page for the admin shows the calendar.
+* The home page for the admin shows the calendar. If a bug is noticed, then it can be reported using the email given on the home page.
 * **Attendance**
 * The attendance page for the admin allows the admin to take attendance at their chapter meetings.
 * **Events**
@@ -53,7 +53,7 @@ After giving that information, select the sign up button.
 
 ### Student Features
 * **Home Page**
-* The home page for the student includes information About FBLA, a Join FBLA form, the link to the FBLA website, the local officer team, and links to social media.
+* The home page for the student includes information About FBLA, a Join FBLA form, the link to the FBLA website, the local officer team, and links to social media.  If a bug is noticed, then it can be reported using the email given on the home page.
 * **Calendar**
 * The calendar page allows for students to access their chapter's calendar, including current events like volunteer opportunities and more.
 * **Events**
@@ -62,6 +62,6 @@ After giving that information, select the sign up button.
 The Q&A page allows students to see frequently asked questions and their answers. It also allows students to contact the administrators. Administrators will receive emails with this information.
 
 ### Compatibility
-FBLA Super Manager is currently compatible with devices with iOS 9 and higher, including iPhones, iPads, and other similar Apple devices. 
+Currently, in order to open FBLA Super Manager, you will need XCode 9 or higher. Update your XCode for best results. 
 
 

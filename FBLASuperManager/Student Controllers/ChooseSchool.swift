@@ -18,7 +18,8 @@ class ChooseSchool: UIViewController {
      @IBOutlet weak var school: UITextField!
      @IBOutlet weak var signInButton: UIButton!
     
-    var user1 = "ryGqulPBt0XpGMTcojuUXMHUa093"
+    // to make sure that user1 is never empty
+    var user1 = "XpNItJgfdiOurKmsRNe0qpcC7Iz2"
     
 
     // the user id that we want
