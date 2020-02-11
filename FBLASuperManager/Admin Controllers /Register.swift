@@ -51,7 +51,8 @@ class Register: UIViewController {
     var answers: [String] = []
     var name: [String] = []
     var bio: [String] = []
-
+    var attendanceDates: [String] = []
+    var attendanceRef: [Any] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -147,6 +148,8 @@ class Register: UIViewController {
                         "answers": self.answers,
                         "name": self.name,
                         "bio": self.bio,
+                        "attendanceDates": self.attendanceDates,
+                        "attendanceRef": self.attendanceRef,
                         
                     "uid":result!.user.uid]) { (error) in
                         if error != nil {
