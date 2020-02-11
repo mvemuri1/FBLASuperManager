@@ -40,28 +40,26 @@ After giving that information, select the sign up button.
 
 
 ### Admin Features 
-* **Sign in and/or Register with Google**
-    * Advisors and chapter leaders may sign in through a google account linked to their chapter. This is allows for easy access to their Google forms, sheets, and other applications from Google used in other features of the app.
-* **Calendar**
-    * The Home screen displays the chapter calendar linked to the account.
+* **Home**
+* The home page for the admin shows the calendar.
 * **Attendance**
-    * Advisors and chapter leaders can easily and traditionally take attendance during meetings in the attendance tab.
-* **See Sign-Ups and New Members**
-    * Administrative users have the ability to see the sign up results for new members as well as those who signed up for competitive events.
-* **Q&A**
-    * Administrators can update their Q&A page with any new questions that are frequently asked by students.
+* The attendance page for the admin allows the admin to take attendance at their chapter meetings.
+* **Events**
+* The events page allows for the administrator to see the sign ups for their chapter's competitive events.
 * **Officers**
-    * Advisors can easily add new officers to their officers page, allowing students to see who to contact when the advisor is not available.
+* The officers page allows administrators to add more officers and see the current officers and their biographies.
+* **Q & A**
+* The Q and A page allows administrators to add more frequently asked questions.
 
 ### Student Features
-* **About FBLA**
-* **Chapter Website**
-* **Join FBLA**
-* **Social Media**
-* **Meet Officers**
-* **Sign up for Events**
-* **Join Chapter**
-* **Contact**
+* **Home Page**
+* The home page for the student includes information About FBLA, a Join FBLA form, the link to the FBLA website, the local officer team, and links to social media.
+* **Calendar**
+* The calendar page allows for students to access their chapter's calendar, including current events like volunteer opportunities and more.
+* **Events**
+* The events page allows students to learn more about competitive events, sign up for a competitive event, and see who in their chapter has already signed up.
+* **Q & A**
+The Q&A page allows students to see frequently asked questions and their answers. It also allows students to contact the administrators. Administrators will receive emails with this information.
 
 ### Compatibility
 FBLA Super Manager is currently compatible with devices with iOS 9 and higher, including iPhones, iPads, and other similar Apple devices. 
