@@ -128,8 +128,10 @@ class AttendanceAdmin: UIViewController {
        /* attendeeDates.append((formatter.string(from: dateChosen.date)))
     
         index = dates.firstIndex(of:(formatter.string(from: dateChosen.date)))!*/
-        
+        attendee.text = ""
+    
     }
+    
     
     
     //seek reference
