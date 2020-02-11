@@ -17,6 +17,10 @@ class QandAAdmin: UIViewController {
     public var questions: [String] = []
     public var answers: [String] = []
 
+    
+    public var printQuestions: [String] = []
+    public var printAnswers: [String] = []
+
     //Creates reference to UI
     @IBOutlet weak var q: UITextField!
     @IBOutlet weak var a: UITextField!
@@ -56,6 +60,35 @@ class QandAAdmin: UIViewController {
         q.text = ""
         a.text = ""
         
+        print(printQA())
+        list.text = printQA()
+    }
+    
+    //returns String full of QA
+    func printQA() -> String{
+       let db = Firestore.firestore()
+        let chapRef = db.collection("chapter").document(Auth.auth().currentUser!.uid)
+        var index = -1
+        var printedString = ""
+           
+           chapRef.getDocument { (snapshot, err) in
+                     if let data = snapshot?.data() {
+                      // making sure it is a string for use as a URL later. the string in the "" is the field that will be retrieved.
+                       if((data["questions"]) != nil){
+                        self.printQuestions = data["questions"] as! [String]
+                       }
+                       if((data["answers"]) != nil){
+                           self.printAnswers = data["answers"] as! [String]
+                       }
+               }}
+        
+        //fills in printedString
+        for question in printQuestions{
+           
+                index = printQuestions.firstIndex(of:question)!
+                printedString = "\(printedString) Question: \(printQuestions[index]) \n Answer: \(printAnswers[index])"
+        }
+        return printedString
     }
     
     
