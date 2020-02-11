@@ -5,6 +5,9 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
+      location = "group:CopyrightandDocumentation.md">
+   </FileRef>
+   <FileRef
       location = "group:FBLASuperManager.xcodeproj">
    </FileRef>
    <FileRef
