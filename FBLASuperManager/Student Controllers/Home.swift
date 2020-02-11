@@ -18,15 +18,13 @@ class Home: UIViewController {
     
      @IBOutlet weak var localOff: UIButton!
     
-     @IBOutlet weak var facebook: UIImageView!
-    @IBOutlet weak var facebookk: UIButton!
+/*    @IBOutlet weak var facebookk: UIButton!
     
-     @IBOutlet weak var instagram: UIImageView!
-    @IBOutlet weak var instagramm: UIImageView!
+    @IBOutlet weak var instagram: UIButton!
     
-     @IBOutlet weak var twitter: UIImageView!
+    @IBOutlet weak var twitter: UIButton! */
     
-    @IBOutlet weak var twitterr: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()
