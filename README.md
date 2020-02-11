@@ -12,7 +12,7 @@ FBLA Super Manager is a revolutionary way to manage a local Future Business Lead
 ### Instructions for Download
 1. In order to open FBLA Super Manager, one will need Xcode on their personal computer device. After getting this application, download all files by selecting the green download button in Github.
 2. Once all the files have been downloaded, find the folder titled "FBLASuperManager" in either your downloads or documents folder. Select the file titled "FBLASuperManager.xcworkspace" to open the file in Xcode. 
-3. At the top left, there will be a "play" button that looks like a sideways triangle. Select this button and FBLA Super Manager should open in a simulator. You may begin using the app. 
+3. At the top left, there will be a "play" button that looks like a sideways triangle. If this button is not allowing you to select it, then select the "AppAuth" text displayed next to the Stop (square) button and then select FBLASuperManager. Hover over the small sideways triangle next to the text to allow a dropdown to appear, then select iPhone 8 Plus. Select the play button and FBLA Super Manager should open in a simulator. You may begin using the app. 
 
 ### Instructions for Use (Admin)
 1. If you would look to simply look at the application features without creating an account, we have created a test account. Select admin, then sign in, then fill in the blanks with the following.
@@ -30,7 +30,8 @@ FBLA Super Manager is a revolutionary way to manage a local Future Business Lead
 * A link to a google form that allows students to sign up for the chapter
 * A link to a google form that allows students to sign up for a competitive event
 * Twitter link
-After giving that information, select the sign up button.
+
+* After giving that information, select the sign up button.
 3. At the bottom, there is a tab bar that allows you to select what feature you would like to explore. 
 
 ### Instructions for Use (Student)
@@ -62,6 +63,6 @@ After giving that information, select the sign up button.
 The Q&A page allows students to see frequently asked questions and their answers. It also allows students to contact the administrators. Administrators will receive emails with this information.
 
 ### Compatibility
-Currently, in order to open FBLA Super Manager, you will need XCode 9 or higher. Update your XCode for best results. 
+Currently, in order to open FBLA Super Manager, you will need XCode 9 or higher. Update your XCode for best results. If you do not have XCode, you may view the source code on Github by selecting the folder labelled FBLASuperManager.
 
 
