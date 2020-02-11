@@ -136,6 +136,7 @@ class Register: UIViewController {
                     
                     db.collection("chapter").document(Auth.auth().currentUser!.uid).setData([
                         "chapterCalendar":self.chapterCalendar.text,
+                        "email":self.email.text,
                         "chapterWebsite":self.chapterWebsite.text,
                         "eventsForm":self.eventsForm.text,
                         "eventsSheet":self.eventsSheet.text,
