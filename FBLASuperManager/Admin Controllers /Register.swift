@@ -149,7 +149,7 @@ class Register: UIViewController {
                         "name": self.name,
                         "bio": self.bio,
                         "attendanceDates": self.attendanceDates,
-                        "attendanceRef": self.attendanceRef,
+                        "attendanceRefs": self.attendanceRef,
                         
                     "uid":result!.user.uid]) { (error) in
                         if error != nil {
