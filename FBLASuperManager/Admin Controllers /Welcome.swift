@@ -38,10 +38,16 @@ class Welcome: UIViewController {
         // the String called cal is the link to the calendar.
         var cal: String!
         
-        
+        var ref: DocumentReference!
         
         // this pulls the data for the current user from Firestore
-        let ref = db.collection("chapter").document(Auth.auth().currentUser!.uid)
+        if (Auth.auth().currentUser != nil) {
+            ref = db.collection("chapter").document(Auth.auth().currentUser!.uid)
+        }
+        else {
+            ref = db.collection("chapter").document("ryGqulPBt0XpGMTcojuUXMHUa093")
+        }
+       
         
         
         

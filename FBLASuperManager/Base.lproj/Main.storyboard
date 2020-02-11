@@ -135,9 +135,6 @@
                                 <state key="normal" title="Sign-In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Hby-Ma-HJc" kind="presentation" id="XGN-JK-cxZ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rc6-wW-Jjt">
                                 <rect key="frame" x="99" y="453" width="217" height="65"/>
@@ -146,9 +143,6 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="CLe-YF-efc" kind="presentation" id="PVF-uX-GkL"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon transparent" id="bVe-tQ-CUv">
                                 <rect key="frame" x="28" y="62" width="358" height="251"/>
@@ -1425,8 +1419,6 @@
         <image name="rosette" catalog="system" width="50" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="otf-wX-f9K"/>
-        <segue reference="EOH-hn-G7P"/>
-        <segue reference="bd6-tO-PEi"/>
+        <segue reference="jPh-5T-Jvl"/>
     </inferredMetricsTieBreakers>
 </document>
