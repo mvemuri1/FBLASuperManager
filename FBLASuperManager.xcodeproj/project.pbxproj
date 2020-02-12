@@ -41,6 +41,8 @@
 		4AA8D5AF23E8F4A70095CA6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */; };
 		4ABDA79923EA74FA0048AC6B /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABDA79823EA74FA0048AC6B /* Welcome.swift */; };
 		6B768B1D23F2796E00F2F88D /* QandAStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B768B1C23F2796E00F2F88D /* QandAStudent.swift */; };
+		6B768B1F23F3738E00F2F88D /* ViewAttendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B768B1E23F3738E00F2F88D /* ViewAttendance.swift */; };
+		6B768B2123F38CF200F2F88D /* OfficersStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B768B2023F38CF200F2F88D /* OfficersStudent.swift */; };
 		6BEA514323EB9D3F00083C50 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA514223EB9D3F00083C50 /* Constants.swift */; };
 		6BEA853323F0D2C300083C50 /* AttendanceAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA853223F0D2C300083C50 /* AttendanceAdmin.swift */; };
 		8B109B0B3D32A1AA248EDBA8 /* Pods_FBLASuperManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662930CA5CD69F3DF45DCBDB /* Pods_FBLASuperManager.framework */; };
@@ -117,6 +119,8 @@
 		662930CA5CD69F3DF45DCBDB /* Pods_FBLASuperManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6798731BE248F6BDE78125C0 /* Pods_FBLASuperManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B768B1C23F2796E00F2F88D /* QandAStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QandAStudent.swift; sourceTree = "<group>"; };
+		6B768B1E23F3738E00F2F88D /* ViewAttendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewAttendance.swift; path = "/Users/annieseth/Documents/FBLASuperManager/FBLASuperManager/Admin Controllers /ViewAttendance.swift"; sourceTree = "<absolute>"; };
+		6B768B2023F38CF200F2F88D /* OfficersStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficersStudent.swift; sourceTree = "<group>"; };
 		6BEA514223EB9D3F00083C50 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6BEA853223F0D2C300083C50 /* AttendanceAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceAdmin.swift; sourceTree = "<group>"; };
 		7DC0DF32AB7E75B6C8FD413E /* Pods-FBLASuperManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLASuperManager.debug.xcconfig"; path = "Target Support Files/Pods-FBLASuperManager/Pods-FBLASuperManager.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				4A64A96123F235FF00AB07A1 /* CalendarStudent.swift */,
 				4A64A97923F2CF3300AB07A1 /* Home.swift */,
 				4A64A96B23F2CE9D00AB07A1 /* AboutFBLA.swift */,
+				6B768B2023F38CF200F2F88D /* OfficersStudent.swift */,
 				4A64A96D23F2CEB800AB07A1 /* JoinChap.swift */,
 				4A64A96F23F2CEC400AB07A1 /* ChapWebsite.swift */,
 				4A64A97123F2CECF00AB07A1 /* OfficerTeam.swift */,
@@ -228,6 +233,7 @@
 				4A64A96023F235CE00AB07A1 /* Student Controllers */,
 				6BEA853123F0D0D500083C50 /* Admin Controllers  */,
 				4AA8D58C23E8F3B20095CA6B /* Info.plist */,
+				4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */,
 				4AA8D58423E8F3B00095CA6B /* Main.storyboard */,
 			);
 			path = FBLASuperManager;
@@ -263,7 +269,7 @@
 				4A5859E623EC251D00B7E5ED /* Register.swift */,
 				6BEA853223F0D2C300083C50 /* AttendanceAdmin.swift */,
 				4A64A95823F20A4600AB07A1 /* QAObject.swift */,
-				4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */,
+				6B768B1E23F3738E00F2F88D /* ViewAttendance.swift */,
 			);
 			path = "Admin Controllers ";
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 				4A64A97423F2CEDC00AB07A1 /* Facebook.swift in Sources */,
 				4A64A96E23F2CEB800AB07A1 /* JoinChap.swift in Sources */,
 				4ABDA79923EA74FA0048AC6B /* Welcome.swift in Sources */,
+				6B768B2123F38CF200F2F88D /* OfficersStudent.swift in Sources */,
 				4A64A96623F23E2A00AB07A1 /* EventSignUp.swift in Sources */,
 				4A5859E723EC251D00B7E5ED /* Register.swift in Sources */,
 				4AA8D57F23E8F3B00095CA6B /* AppDelegate.swift in Sources */,
@@ -567,6 +574,7 @@
 				4A64A95B23F20A5C00AB07A1 /* QandAAdmin.swift in Sources */,
 				6BEA514323EB9D3F00083C50 /* Constants.swift in Sources */,
 				4A64A97823F2CEEF00AB07A1 /* Twitter.swift in Sources */,
+				6B768B1F23F3738E00F2F88D /* ViewAttendance.swift in Sources */,
 				4A64A95F23F220F500AB07A1 /* Events.swift in Sources */,
 				4A64A96C23F2CE9D00AB07A1 /* AboutFBLA.swift in Sources */,
 				4A64A96823F23EBD00AB07A1 /* EventSheetStudent.swift in Sources */,

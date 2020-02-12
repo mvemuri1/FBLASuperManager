@@ -26,8 +26,9 @@ class QandAAdmin: UIViewController {
     @IBOutlet weak var a: UITextField!
     
     //has
-    @IBOutlet weak var list: UILabel!
+
     
+    @IBOutlet weak var list: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,11 +65,12 @@ class QandAAdmin: UIViewController {
         list.text = printQA()
     }
     
+    
+    
     //returns String full of QA
     func printQA() -> String{
        let db = Firestore.firestore()
         let chapRef = db.collection("chapter").document(Auth.auth().currentUser!.uid)
-        var index = -1
         var printedString = ""
            
            chapRef.getDocument { (snapshot, err) in
@@ -83,11 +85,18 @@ class QandAAdmin: UIViewController {
                }}
         
         //fills in printedString
-        for question in printQuestions{
+        /*for question in printQuestions{
            
                 index = printQuestions.firstIndex(of:question)!
                 printedString = "\(printedString) Question: \(printQuestions[index]) \n Answer: \(printAnswers[index])"
-        }
+        }*/
+        var i = 0
+        for question in printQuestions{
+                       printedString = "\(printedString) Question: \(question) \nAnswer: \(printAnswers[i]) \n\n"
+            i = i+1
+               }
+        
+        print(printedString)
         return printedString
     }
     

@@ -82,7 +82,7 @@ class AttendanceAdmin: UIViewController {
     }
     
     if (check){
-        print("annie")
+        print("annie \(index)")
     }
     
     
@@ -131,6 +131,7 @@ class AttendanceAdmin: UIViewController {
         attendee.text = ""
     
     }
+    
     
     
     

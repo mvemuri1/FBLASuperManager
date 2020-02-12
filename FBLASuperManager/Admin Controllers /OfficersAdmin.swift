@@ -17,10 +17,17 @@ class OfficersAdmin: UIViewController {
     public var name: [String] = []
     public var bio: [String] = []
 
+    
+    public var printName: [String] = []
+    public var printBio: [String] = []
+    
     //Creates reference to UI
     @IBOutlet weak var n: UITextField!
     
     @IBOutlet weak var b: UITextField!
+    
+    
+    @IBOutlet weak var list: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +60,41 @@ class OfficersAdmin: UIViewController {
         n.text = ""
         b.text = ""
         
+        print(printOfficers())
+        list.text = printOfficers()
+        
+        
+       
+        
     }
+    
+    //returns String full of QA
+       func printOfficers() -> String{
+          let db = Firestore.firestore()
+           let chapRef = db.collection("chapter").document(Auth.auth().currentUser!.uid)
+           var printedString = ""
+              
+              chapRef.getDocument { (snapshot, err) in
+                        if let data = snapshot?.data() {
+                         // making sure it is a string for use as a URL later. the string in the "" is the field that will be retrieved.
+                          if((data["name"]) != nil){
+                           self.printName = data["name"] as! [String]
+                          }
+                          if((data["bio"]) != nil){
+                              self.printBio = data["bio"] as! [String]
+                          }
+                  }}
+           
+           //fills in printedString
+        
+        var i = 0
+        for name in printName{
+                       printedString = "\(printedString) Name: \(name) \nBio: \(printBio[i]) \n\n"
+            i = i+1
+               }
+        print(printedString)
+           return printedString
+       }
     
     
     
