@@ -42,7 +42,7 @@ FBLA Super Manager is a revolutionary way to manage a local Future Business Lead
 
 ### Admin Features 
 * **Home**
-* The home page for the admin shows the calendar. If a bug is noticed, then it can be reported using the email given on the home page.
+* The home page for the admin shows the calendar. 
 * **Attendance**
 * The attendance page for the admin allows the admin to take attendance at their chapter meetings.
 * **Events**
@@ -56,7 +56,7 @@ On the same page as the Q&A, there is a box for any users to report a bug. This 
 
 ### Student Features
 * **Home Page**
-* The home page for the student includes information About FBLA, a Join FBLA form, the link to the FBLA website, the local officer team, and links to social media.  If a bug is noticed, then it can be reported using the email given on the home page.
+* The home page for the student includes information About FBLA, a Join FBLA form, the link to the FBLA website, the local officer team, and links to social media.  
 * **Calendar**
 * The calendar page allows for students to access their chapter's calendar, including current events like volunteer opportunities and more.
 * **Events**
