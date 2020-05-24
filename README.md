@@ -62,9 +62,9 @@ On the same page as the Q&A, there is a box for any users to report a bug. This 
 * **Events**
 * The events page allows students to learn more about competitive events, sign up for a competitive event, and see who in their chapter has already signed up.
 * **Q & A**
-The Q&A page allows students to see frequently asked questions and their answers. It also allows students to contact the administrators. Administrators will receive emails with this information.
+* The Q&A page allows students to see frequently asked questions and their answers. It also allows students to contact the administrators. Administrators will receive emails with this information.
 * **Bug Reporting System**
-On the same page as the Q&A, there is a box for any users to report a bug. This is automatically sent to the Firebase Database, which emails the developers.
+* On the same page as the Q&A, there is a box for any users to report a bug. This is automatically sent to the Firebase Database, which emails the developers.
 
 ### Compatibility
 Currently, in order to open FBLA Super Manager, you will need XCode 9 or higher. Update your XCode for best results. If you do not have XCode, you may view the source code on Github by selecting the folder labelled FBLASuperManager.
