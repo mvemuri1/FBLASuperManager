@@ -121,7 +121,7 @@
 		4AA8D5AE23E8F4A70095CA6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4ABDA79823EA74FA0048AC6B /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		6B768B1C23F2796E00F2F88D /* QandAStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QandAStudent.swift; sourceTree = "<group>"; };
-		6B768B1E23F3738E00F2F88D /* ViewAttendance.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = ViewAttendance.swift; path = "/Users/meghavemuri/Documents/FBLASuperManager/FBLASuperManager/Admin Controllers /ViewAttendance.swift"; sourceTree = "<absolute>"; };
+		6B768B1E23F3738E00F2F88D /* ViewAttendance.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = ViewAttendance.swift; sourceTree = "<group>"; };
 		6B768B2023F38CF200F2F88D /* OfficersStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficersStudent.swift; sourceTree = "<group>"; };
 		6BEA514223EB9D3F00083C50 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6BEA853223F0D2C300083C50 /* AttendanceAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceAdmin.swift; sourceTree = "<group>"; };
