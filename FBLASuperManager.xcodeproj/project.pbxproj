@@ -119,7 +119,7 @@
 		662930CA5CD69F3DF45DCBDB /* Pods_FBLASuperManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6798731BE248F6BDE78125C0 /* Pods_FBLASuperManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLASuperManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B768B1C23F2796E00F2F88D /* QandAStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QandAStudent.swift; sourceTree = "<group>"; };
-		6B768B1E23F3738E00F2F88D /* ViewAttendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewAttendance.swift; path = "/Users/annieseth/Documents/FBLASuperManager/FBLASuperManager/Admin Controllers /ViewAttendance.swift"; sourceTree = "<absolute>"; };
+		6B768B1E23F3738E00F2F88D /* ViewAttendance.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = ViewAttendance.swift; path = "/Users/meghavemuri/Documents/FBLASuperManager/FBLASuperManager/Admin Controllers /ViewAttendance.swift"; sourceTree = "<absolute>"; };
 		6B768B2023F38CF200F2F88D /* OfficersStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficersStudent.swift; sourceTree = "<group>"; };
 		6BEA514223EB9D3F00083C50 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6BEA853223F0D2C300083C50 /* AttendanceAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceAdmin.swift; sourceTree = "<group>"; };
