@@ -44,13 +44,8 @@ class OfficersAdmin: UIViewController {
                
                // the String called cal is the link to the calendar.
                
-               
-               
                // this pulls the data for the current user from Firestore
                let ref = db.collection("chapter").document(Auth.auth().currentUser!.uid)
-               
-               
-          
         
         ref.updateData(["name": FieldValue.arrayUnion([n.text!])])
         ref.updateData(["bio": FieldValue.arrayUnion([b.text!])])

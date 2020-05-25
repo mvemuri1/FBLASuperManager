@@ -52,7 +52,7 @@ class QandAStudent: UIViewController {
               }
         list.text = (printedString)
         
-        list.text = "Question: How many events can I compete in at region and state? \nAnswer: You can compete in 2 events at the regional level; only one may be a presentation at the region level. At state, you can compete in a total of 2 events, including the events that you passed from region to state in. \n\n Question: How do I become an officer? \nAnswer: Come speak to the advisor, Mr. Hatcher, in his room, 1271. Applications come out in late April. \n\n Question: How much does it cost to join? \nAnswer: Joining costs $35 if you would like a t-shirt and $30 without."
+        list.text = "Question: How do I become an officer? \nAnswer: Come speak to the advisor, Mr. Hatcher, in his room, 1271. Applications come out in late April. \n\n Question: How much does it cost to join? \nAnswer: Joining costs $35 if you would like a t-shirt and $30 without."
 
     }
 }

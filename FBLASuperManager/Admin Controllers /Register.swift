@@ -164,13 +164,15 @@ class Register: UIViewController {
                 
                 ref.updateData(["uid": FieldValue.arrayUnion([result!.user.uid])])
                 
-            }
-                      
-   //           self.transitionToWelcome()
-                
-          }
-                 
-      }
+            }}}
+    
+    
+    //Function to check for strong passwords- checks for common patterns (Ensures user has 8 characters, special character, and a number
+    static func isPasswordValid(_ password: String) -> Bool{
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
+        return passwordTest.evaluate(with: password)
+    }
+    
         }
     
       

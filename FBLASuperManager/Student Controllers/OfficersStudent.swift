@@ -44,7 +44,7 @@ class OfficersStudent: UIViewController {
                    i = i+1
                       }
                print(printedString)
-        list.text =  "Name: Sarang Pujari \nBio: Co-president, 12th \n\nName: Suchetas Bokil \nBio: Co-president, 12th \n\nName: Ajinkya Gundaria \nBio: Region Vice President, 11th \n\nName: Allison Wang \nBio: Vice President of Publicity, 11th \n\nName: Abhay Sastry \nBio: Vice President of Membership, 12th \n\nName: Megha Vemuri \nBio: Vice President of Operations, 11th \n\nName: Jason Juang \nBio: Executive Director, 12th \n\n"
+        list.text =  "Name: Sarang Pujari \nBio: Co-president, 12th \n\nName: Suchetas Bokil \nBio: Co-president, 12th "
         
         
     

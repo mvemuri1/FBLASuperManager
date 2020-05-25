@@ -814,13 +814,6 @@
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="(click submit twice to ensure choice)">
-                                        <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="18" name="DINAlternate-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -892,7 +885,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Please Submit New Q &amp; A to view New and Old Q &amp; A (click submit twice to ensure choice)">
+                                    <fragment content="Please Submit New Q &amp; A to view New and Old Q &amp; A ">
                                         <attributes>
                                             <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <font key="NSFont" size="18" name="DINAlternate-Bold"/>
@@ -1168,7 +1161,7 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="-352.23214285714283"/>
         </scene>
-        <!--Register-->
+        <!--Title-->
         <scene sceneID="DT1-vB-4DY">
             <objects>
                 <viewController id="CLe-YF-efc" customClass="Register" customModule="FBLASuperManager" customModuleProvider="target" sceneMemberID="viewController">
@@ -1267,6 +1260,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QXh-Ar-wxF"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="Jif-g2-eHb"/>
                     <connections>
                         <outlet property="chapterCalendar" destination="d8k-KK-YIy" id="hsI-h4-El8"/>
                         <outlet property="chapterWebsite" destination="IiU-PA-wIy" id="hba-gY-XKa"/>
@@ -1431,6 +1425,6 @@
         <image name="rosette" catalog="system" width="50" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jPh-5T-Jvl"/>
+        <segue reference="bd6-tO-PEi"/>
     </inferredMetricsTieBreakers>
 </document>
