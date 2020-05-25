@@ -31,6 +31,7 @@
 		4A64A97A23F2CF3300AB07A1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64A97923F2CF3300AB07A1 /* Home.swift */; };
 		4A72BC0523F2FC86008081F7 /* OfficersAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72BC0423F2FC85008081F7 /* OfficersAdmin.swift */; };
 		4A72BC0723F2FC8A008081F7 /* AdminAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72BC0623F2FC8A008081F7 /* AdminAccount.swift */; };
+		4A780A29247B89A50067A9A9 /* BugReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A780A28247B89A50067A9A9 /* BugReport.swift */; };
 		4AA8D57F23E8F3B00095CA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D57E23E8F3B00095CA6B /* AppDelegate.swift */; };
 		4AA8D58123E8F3B00095CA6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D58023E8F3B00095CA6B /* SceneDelegate.swift */; };
 		4AA8D58323E8F3B00095CA6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8D58223E8F3B00095CA6B /* ViewController.swift */; };
@@ -101,6 +102,7 @@
 		4A64A97923F2CF3300AB07A1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4A72BC0423F2FC85008081F7 /* OfficersAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficersAdmin.swift; sourceTree = "<group>"; };
 		4A72BC0623F2FC8A008081F7 /* AdminAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminAccount.swift; sourceTree = "<group>"; };
+		4A780A28247B89A50067A9A9 /* BugReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugReport.swift; sourceTree = "<group>"; };
 		4AA8D57B23E8F3B00095CA6B /* FBLASuperManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBLASuperManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA8D57E23E8F3B00095CA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AA8D58023E8F3B00095CA6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				4AA8D58723E8F3B20095CA6B /* Assets.xcassets */,
 				4AA8D57E23E8F3B00095CA6B /* AppDelegate.swift */,
 				4AA8D58223E8F3B00095CA6B /* ViewController.swift */,
+				4A780A28247B89A50067A9A9 /* BugReport.swift */,
 				4AA8D58023E8F3B00095CA6B /* SceneDelegate.swift */,
 				4A64A92F23F0707F00AB07A1 /* Utilities.swift */,
 				6BEA514223EB9D3F00083C50 /* Constants.swift */,
@@ -560,6 +563,7 @@
 				6BEA853323F0D2C300083C50 /* AttendanceAdmin.swift in Sources */,
 				4A64A96223F235FF00AB07A1 /* CalendarStudent.swift in Sources */,
 				4A64A97A23F2CF3300AB07A1 /* Home.swift in Sources */,
+				4A780A29247B89A50067A9A9 /* BugReport.swift in Sources */,
 				4A64A96A23F245F800AB07A1 /* EventButtons.swift in Sources */,
 				4AA8D58323E8F3B00095CA6B /* ViewController.swift in Sources */,
 				4A72BC0723F2FC8A008081F7 /* AdminAccount.swift in Sources */,
