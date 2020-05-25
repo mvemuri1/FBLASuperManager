@@ -17,6 +17,7 @@ class QandAAdmin: UIViewController {
     public var questions: [String] = []
     public var answers: [String] = []
 
+    @IBOutlet weak var bug: UIButton!
     
     public var printQuestions: [String] = []
     public var printAnswers: [String] = []

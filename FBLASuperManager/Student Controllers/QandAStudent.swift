@@ -21,6 +21,7 @@ class QandAStudent: UIViewController {
     
     var email: String = ""
     
+    @IBOutlet weak var bugs: UIButton!
     var printedStr = ""
     var printQuestion: [String] = []
     var printAnswer: [String] = []
