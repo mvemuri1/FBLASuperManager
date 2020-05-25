@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class Home: UIViewController {
 
@@ -31,6 +32,24 @@ class Home: UIViewController {
         setUpElements()
     }
           
+ /*   @IBAction func postFaceBook(_ sender: Any) {
+        // Check if Facebook is available
+        if (SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook))
+        {
+            // Create the post
+            let post = SLComposeViewController(forServiceType: (SLServiceTypeFacebook))
+            post!.setInitialText("I want to share this App: ")
+            post!.add(UIImage(named: "shareImage"))
+            self.present(post!, animated: true, completion: nil)
+        } else {
+            // Facebook not available. Show a warning
+            let alert = UIAlertController(title: "Facebook", message: "Facebook not available", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+ 
+ */
     func setUpElements() {
           
     // Hide the error label

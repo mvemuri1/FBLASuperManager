@@ -610,7 +610,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CFR-tW-aaU">
-                                <rect key="frame" x="33" y="442" width="90" height="90"/>
+                                <rect key="frame" x="33" y="427" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" title="Button" image="Facebook"/>
                                 <connections>
@@ -618,7 +618,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CNP-Dh-e3e">
-                                <rect key="frame" x="147" y="441" width="90" height="90"/>
+                                <rect key="frame" x="147" y="426" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" title="Button" image="Instagram"/>
                                 <connections>
@@ -626,7 +626,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zYA-oU-N5E">
-                                <rect key="frame" x="261" y="442" width="90" height="90"/>
+                                <rect key="frame" x="261" y="427" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" title="Button" image="Twitter"/>
                                 <connections>
@@ -647,6 +647,23 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6m-iF-3py">
+                                <rect key="frame" x="55" y="516" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="postFaceBook:" destination="qpb-VH-Uz1" eventType="touchUpInside" id="zxS-kD-eSH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcT-bL-88c">
+                                <rect key="frame" x="283" y="516" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tweet">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.46043146909999999" green="0.62814896750000004" blue="0.84787436549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="rtC-0J-fTk"/>
@@ -952,9 +969,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="696"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="03R-ma-pdc">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="03R-ma-pdc">
                                         <rect key="frame" x="37" y="327" width="339" height="79"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Please report a bug to the developers of FBLA Super Manager here. If there is a problem, the SuperDevelopers can fix it!">
@@ -967,16 +983,16 @@
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bug Report" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oAV-1l-9OB">
-                                        <rect key="frame" x="31" y="442" width="353" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bug Report" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oAV-1l-9OB">
+                                        <rect key="frame" x="150" y="427" width="101" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="znj-7V-WPL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vW0-7X-UDQ">
-                                        <rect key="frame" x="29" y="516" width="354" height="65"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vW0-7X-UDQ">
+                                        <rect key="frame" x="50" y="481" width="314" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="sUT-fV-kqD"/>
                                         </constraints>
@@ -1011,6 +1027,14 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.45882352939999999" green="0.62745098040000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="ZtR-22-nJm" firstAttribute="trailing" secondItem="vW0-7X-UDQ" secondAttribute="trailing" constant="50" id="1lv-nI-yRo"/>
+                                    <constraint firstItem="oAV-1l-9OB" firstAttribute="top" secondItem="03R-ma-pdc" secondAttribute="bottom" constant="20" id="8CG-M5-6t2"/>
+                                    <constraint firstItem="vW0-7X-UDQ" firstAttribute="leading" secondItem="ZtR-22-nJm" secondAttribute="leading" constant="50" id="MOY-sF-PVz"/>
+                                    <constraint firstItem="vW0-7X-UDQ" firstAttribute="top" secondItem="oAV-1l-9OB" secondAttribute="bottom" constant="20" id="Uhx-sN-T2p"/>
+                                    <constraint firstItem="oAV-1l-9OB" firstAttribute="leading" secondItem="ZtR-22-nJm" secondAttribute="leading" constant="150" id="ZyK-6x-Phx"/>
+                                    <constraint firstItem="ZtR-22-nJm" firstAttribute="bottom" secondItem="vW0-7X-UDQ" secondAttribute="bottom" constant="150" id="jXo-lW-dtd"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="ZtR-22-nJm"/>
                             </view>
                         </subviews>
