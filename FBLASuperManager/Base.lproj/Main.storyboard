@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -278,7 +278,7 @@
                                         <rect key="frame" x="0.0" y="362.66666666666669" width="320" height="203.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="View Attendee Names Here (Press Show 3 times to ensure selection)">
+                                            <fragment content="View Attendee Names Here ">
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="DINAlternate-Bold"/>
@@ -1540,22 +1540,22 @@
             <point key="canvasLocation" x="5105.7971014492759" y="650.54347826086962"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="bd6-tO-PEi"/>
-        <segue reference="gFl-x4-CJi"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Facebook" width="170.66667175292969" height="170.66667175292969"/>
         <image name="Icon transparent" width="236" height="145.33332824707031"/>
         <image name="Image" width="170.66667175292969" height="170.66667175292969"/>
         <image name="Instagram" width="170.66667175292969" height="170.66667175292969"/>
         <image name="Twitter" width="170.66667175292969" height="170.66667175292969"/>
-        <image name="calendar" catalog="system" width="128" height="106"/>
-        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
+        <image name="calendar" catalog="system" width="64" height="52"/>
+        <image name="checkmark.circle" catalog="system" width="64" height="60"/>
         <image name="hero" width="170.66667175292969" height="170.66667175292969"/>
-        <image name="house" catalog="system" width="128" height="110"/>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <image name="questionmark" catalog="system" width="96" height="128"/>
-        <image name="rosette" catalog="system" width="100" height="128"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="questionmark" catalog="system" width="48" height="64"/>
+        <image name="rosette" catalog="system" width="50" height="64"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bd6-tO-PEi"/>
+        <segue reference="gFl-x4-CJi"/>
+    </inferredMetricsTieBreakers>
 </document>

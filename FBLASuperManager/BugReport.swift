@@ -28,6 +28,7 @@ class BugReport: UIViewController {
     @IBAction func submitTapped(_ sender: Any) {
         
         message!.text = "Thank you! The SuperDevelopers will fix this immediately."
+        reported!.text = ""
     }
     
 }
