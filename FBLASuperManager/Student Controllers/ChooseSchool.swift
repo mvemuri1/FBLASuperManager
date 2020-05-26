@@ -19,7 +19,7 @@ class ChooseSchool: UIViewController {
      @IBOutlet weak var signInButton: UIButton!
     
     // to make sure that user1 is never empty
-    var user1 = "XpNItJgfdiOurKmsRNe0qpcC7Iz2"
+    var user1 = "6qWbNmTp3bhSxd0Fsgsge3StnCH3"
     
 
     // the user id that we want
