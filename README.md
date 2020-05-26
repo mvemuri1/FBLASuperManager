@@ -17,7 +17,7 @@ FBLA Super Manager is a revolutionary way to manage a local Future Business Lead
 ### Instructions for Use (Admin)
 1. If you would look to simply look at the application features without creating an account, we have created a test account. Select admin, then sign in, then fill in the blanks with the following.
 #### username: fblasupermanager@gmail.com 
-#### password: admin1234
+#### password: Admin!234
 2. If you want to register with a new chapter account, you will need to provide the application with some information. You must have the following:
 * Email
 * Password
