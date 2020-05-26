@@ -31,9 +31,9 @@ class QandAStudent: UIViewController {
         super.viewDidLoad()
         
         let db = Firestore.firestore()
-        let chapRef = db.collection("chapter").document(Auth.auth().currentUser!.uid)
+     //   let chapRef = db.collection("chapter").document(Auth.auth().currentUser!.uid)
     
-        chapRef.getDocument { (snapshot, err) in
+   /*    chapRef.getDocument { (snapshot, err) in
                   if let data = snapshot?.data() {
                    // making sure it is a string for use as a URL later. the string in the "" is the field that will be retrieved.
                     if((data["email"]) != nil){
@@ -41,7 +41,7 @@ class QandAStudent: UIViewController {
                     }
                     
             }}
-        
+        */
         
         //sets label text
         contactUs.text = "Still have more questions? Contact Us via email \(email)"
